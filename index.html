@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050608"><meta name="description" content="Qara Tuynik — an interactive black hole experience by I. Urazov."><title>QARA TUYNIK — Beyond the visible</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23050608'/%3E%3Cellipse cx='32' cy='32' rx='27' ry='9' fill='none' stroke='%23efa86d' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%23050608' stroke='%23efa86d' stroke-width='2'/%3E%3C/svg%3E"><style>
+*{box-sizing:border-box}html{color-scheme:dark}body{margin:0;background:#050608;color:#f3eee8;font-family:Arial,Helvetica,sans-serif}button,input{font:inherit}button,a,input{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #ffd6a5;outline-offset:6px}button{cursor:pointer}header{position:absolute;inset:0 0 auto;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:30px 5vw;gap:16px}.brand{font-size:14px;font-weight:700;letter-spacing:.24em;display:flex;align-items:center;gap:14px}.brand i{width:26px;height:26px;border:1px solid #c99769;border-radius:50%;box-shadow:0 0 13px #bd6e4433}.edition{color:#a6a5a4;font:12px monospace;letter-spacing:.13em}a{color:inherit;text-decoration:none}.hero{position:relative;height:100svh;min-height:780px;isolation:isolate;overflow:hidden}#space{position:absolute;inset:0;width:100%;height:100%;z-index:-2}.intro{position:absolute;top:15%;left:5vw;right:5vw;text-align:center;pointer-events:none}.eyebrow{color:#c79b77;font-size:12px;letter-spacing:.35em;text-transform:uppercase;margin:0 0 16px}h1{font-size:clamp(38px,7.2vw,110px);letter-spacing:.13em;font-weight:400;margin:0;line-height:1.1}h1 span{white-space:nowrap}.cyrillic{color:#b4afaa;font-size:15px;letter-spacing:.28em;margin:16px 0}.caption{position:absolute;left:5vw;bottom:188px;max-width:240px}.caption p{font-size:16px;line-height:1.65;color:#b3b0ac;margin:10px 0}.caption strong{font-size:13px;font-weight:400;color:#dcac82;letter-spacing:.2em;text-transform:uppercase}.indicator{position:absolute;right:5vw;bottom:195px;text-align:right;font:12px/2 monospace;letter-spacing:.1em;color:#8d9095}.indicator b{display:block;color:#dfd8cf;font-weight:400}.controls{position:absolute;bottom:45px;left:5vw;right:5vw;border-top:1px solid #ffffff24;padding-top:24px;display:flex;gap:35px;align-items:center}.control{flex:1;max-width:230px}.control label{display:flex;justify-content:space-between;color:#c2bfba;font-size:13px;margin-bottom:12px}.control output{font-family:monospace;color:#e2af81}input[type=range]{width:100%;accent-color:#e4af7e;height:18px;cursor:pointer}.actions{display:flex;gap:10px;margin-left:auto}button{border:1px solid #ffffff2e;background:#101114b8;color:#e6ded4;border-radius:4px;padding:13px 18px;font-size:14px;min-height:46px}button:hover{background:#24211f;border-color:#aa7e5c}.about-link{display:flex;align-items:center;font-size:14px;margin-left:15px;color:#beafa0}.about{padding:95px 8vw 65px;max-width:1400px;margin:auto}.about-head{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;margin-bottom:60px}h2{font-size:clamp(30px,4vw,52px);font-weight:400;line-height:1.15;margin:0;letter-spacing:-.035em}.about-head p{margin:0;color:#aaa9a6;font-size:18px;line-height:1.8}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.fact{border-top:1px solid #35312d;padding-top:20px}.number{font:12px monospace;color:#c48d61}h3{font-size:19px;font-weight:400;margin:17px 0 10px}.fact p{font-size:16px;color:#a6a5a2;line-height:1.7;margin:0}footer{margin-top:65px;padding-top:24px;border-top:1px solid #242426;display:flex;justify-content:space-between;gap:25px;font-size:12px;color:#858582;line-height:1.6}#fallback{position:absolute;top:48%;left:12%;right:12%;text-align:center;background:#15100c;padding:30px;border:1px solid #896442;border-radius:8px}#fallback[hidden]{display:none}@media(max-width:650px){header{padding:23px 6vw}.brand{font-size:12px;letter-spacing:.15em}.edition{font-size:10px;max-width:85px;text-align:right}.hero{min-height:850px}.intro{top:15%}h1{font-size:clamp(30px,8vw,51px);letter-spacing:.08em}.eyebrow{font-size:11px;letter-spacing:.22em}.cyrillic{font-size:13px}.caption{left:6vw;bottom:256px;max-width:210px}.caption p{font-size:14px}.indicator{right:6vw;bottom:265px;font-size:10px}.controls{bottom:25px;flex-wrap:wrap;gap:20px;left:6vw;right:6vw}.control{max-width:none;flex:1 1 38%}.actions{margin:0;flex:1}.actions button{flex:1}.about-link{margin-left:auto}.about{padding:60px 6vw 35px}.about-head{grid-template-columns:1fr;gap:24px;margin-bottom:35px}.about-head p{font-size:16px}.facts{grid-template-columns:1fr;gap:28px}footer{flex-direction:column;margin-top:40px;gap:8px}}
+
+.controls{bottom:114px;gap:24px}.quality{max-width:145px}select{width:100%;background:#141416;color:#e4ddd4;border:1px solid #ffffff30;border-radius:4px;padding:9px;font:14px Arial}.soundbar{position:absolute;bottom:32px;left:5vw;right:5vw;display:flex;align-items:center;gap:22px}.soundbar .control{max-width:180px}.soundbar .control label{margin-bottom:3px}.soundbar button{min-width:100px}#audio-status{font-size:12px;color:#99948e}.soundbar .about-link{margin-left:auto}.caption{bottom:240px}.indicator{bottom:245px}.intro{top:13%}
+@media(max-width:800px){.controls{flex-wrap:wrap;gap:14px;bottom:133px}.controls .control{flex:1 1 25%;max-width:none}.actions{margin-left:0}.caption{bottom:310px}.indicator{bottom:315px}.soundbar{flex-wrap:wrap;gap:12px;bottom:24px}.soundbar .control{max-width:none;flex:1}#audio-status{order:4;flex-basis:100%;font-size:12px}.soundbar .about-link{margin-left:0}.intro{top:12%}.hero{min-height:910px}}@media(max-width:410px){.indicator{display:none}.controls .control{flex-basis:35%}.controls .quality{flex-basis:100%}.controls .actions{width:100%}.controls{bottom:150px}.caption{bottom:390px}.hero{min-height:980px}h1{font-size:8vw}}
+@media(max-width:800px){.caption,.indicator{display:none}}
+</style></head><body>
+<header><a href="#" class="brand" aria-label="Qara Tuynik home"><i aria-hidden="true"></i>QARA TUYNIK</a><span class="edition">A COSMIC EXPLORATION</span></header>
+<main><section class="hero" aria-label="Interactive black hole"><canvas id="space" role="img" aria-label="Animated artistic black hole with a flowing golden accretion disk and star field"></canvas><div id="fallback" hidden>This browser cannot display the interactive scene. Please open this file in a browser with WebGL enabled.</div><div class="intro"><p class="eyebrow">Beyond the visible</p><h1><span>QARA TUYNIK</span></h1><p class="cyrillic" lang="kaa">Қара түйник</p></div><div class="caption"><strong>The edge of light</strong><p>A journey into the darkness<br>that shapes the universe.</p></div><div class="indicator">01 / BLACK HOLE<b>AN ARTISTIC EXPLORATION</b></div><div class="controls"><div class="control"><label for="angle">Viewing angle <output id="angle-value">10°</output></label><input id="angle" type="range" min="3" max="55" value="10"></div><div class="control"><label for="zoom">Zoom <output id="zoom-value">1.0×</output></label><input id="zoom" type="range" min="70" max="140" value="100"></div><div class="control quality"><label for="quality">Detail</label><select id="quality"><option value="low">Low · faster</option><option value="balanced" selected>Balanced</option><option value="high">High</option></select></div><div class="actions"><button id="pause" type="button" aria-pressed="false">Pause motion</button><button id="reset" type="button">Reset</button></div></div><div class="soundbar"><button id="sound" type="button" aria-pressed="false">Music off</button><div class="control"><label for="volume">Volume <output id="volume-value">35%</output></label><input id="volume" type="range" min="0" max="100" value="35"></div><span id="audio-status" role="status">Original ambient score</span><a class="about-link" href="#discover">Discover</a></div></section>
+<section class="about" id="discover"><div class="about-head"><div><p class="eyebrow">A window into the unknown</p><h2>Darkness at the centre.<br>Light all around.</h2></div><p>A black hole gives off no light from within its event horizon. What we can see is its influence: matter heating as it spirals inward, and light taking curved paths through the space around it.</p></div><div class="facts"><article class="fact"><span class="number">01 — THE BOUNDARY</span><h3>Event horizon</h3><p>The boundary beyond which light cannot escape. The apparent dark shadow is larger than the horizon itself.</p></article><article class="fact"><span class="number">02 — THE GLOW</span><h3>Accretion disk</h3><p>Gas orbiting a black hole can become intensely hot. The luminous disk reveals matter in motion around an otherwise invisible object.</p></article><article class="fact"><span class="number">03 — THE DISTORTION</span><h3>Gravitational lensing</h3><p>Gravity bends the paths of light. Parts of the far side of a disk can appear above and below the black hole.</p></article></div><footer><span>QARA TUYNIK | Қара түйник · I. Urazov</span><span>Approximate ray tracing · Artistic colour and sound</span></footer></section></main>
+<script id="frag" type="x-shader/x-fragment">
+precision highp float;
+uniform vec2 uRes;
+uniform float uTime, uTilt, uZoom;
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1)),f.x),f.y);}
+float fbm(vec2 p){return .55*noise(p)+.28*noise(p*2.03)+.12*noise(p*4.07)+.05*noise(p*8.13);}
+vec3 emission(vec3 p,vec3 velocity){
+ float r=length(p.xz),a=atan(p.z,p.x),orb=uTime*.6/pow(r/3.,1.5);
+ vec2 swirl=vec2(cos(a-orb),sin(a-orb));
+ float turb=fbm(swirl*7.+vec2(r*2.,r*5.));
+ float filaments=.55+.3*sin(r*39.+turb*6.)+.15*sin(r*93.+turb*9.);
+ float radial=smoothstep(2.85,3.4,r)*(1.-smoothstep(7.,10.5,r));
+ float heat=pow(3.2/max(r,3.2),1.5);
+ float doppler=clamp(1.+.32*dot(normalize(vec3(-p.z,0.,p.x)),-normalize(velocity)),.65,1.35);
+ vec3 tint=mix(vec3(1.,.29,.055),vec3(1.,.88,.64),pow(heat,.45));
+ return tint*radial*heat*(.65+.8*turb)*(.65+filaments*.65)*doppler*2.8;
+}
+vec3 sky(vec3 d){
+ vec2 p=vec2(atan(d.z,d.x),asin(clamp(d.y,-1.,1.)));
+ vec2 g=p*330.,cell=floor(g),f=fract(g)-vec2(hash(cell),hash(cell+4.));
+ float s=exp(-dot(f,f)*380.)*step(.994,hash(cell+12.));
+ vec3 c=vec3(.003,.004,.007)+s*vec3(.7,.8,1.);
+ c+=vec3(.016,.018,.027)*pow(noise(p*4.),3.);
+ return c;
+}
+void main(){
+ vec2 uv=(gl_FragCoord.xy-.5*uRes)/uRes.y;
+ uv.y+=.035;
+ float aspect=uRes.x/uRes.y;
+ float focal=mix(.62,1.08,smoothstep(.45,1.5,aspect))*uZoom;
+ vec3 cam=vec3(0.,sin(uTilt)*20.,cos(uTilt)*20.);
+ vec3 fw=normalize(-cam),right=vec3(1.,0.,0.),up=normalize(cross(right,fw));
+ vec3 v=normalize(fw*focal+right*uv.x+up*uv.y);
+ vec3 p=cam;vec3 col=vec3(0.);float trans=1.;bool captured=false;
+ vec3 h=cross(p,v);float h2=dot(h,h);
+ // Affine ray integration for a spherical, non-rotating hole (Rs = 1).
+ // Finite steps, artistic emission and bloom; this is not a Kerr solver.
+ for(int i=0;i<240;i++){
+   float r=length(p);
+   if(r<1.02){captured=true;break;}
+   if(r>35.)break;
+   float dt=clamp(r*.065,.035,1.0);
+   vec3 acc=-1.5*h2*p/pow(r,5.);
+   vec3 next=p+v*dt+.5*acc*dt*dt;
+   float nr=length(next);
+   vec3 acc2=-1.5*h2*next/pow(max(nr,.7),5.);
+   v+=.5*(acc+acc2)*dt;
+   if(p.y*next.y<0.){
+     vec3 hit=mix(p,next,p.y/(p.y-next.y));
+     float dr=length(hit.xz);
+     if(dr>2.85&&dr<10.5){col+=trans*emission(hit,v);trans*=.12;}
+   }
+   float dr=length(p.xz);
+   float haze=exp(-abs(p.y)*12.)*smoothstep(2.8,3.4,dr)*(1.-smoothstep(8.,11.,dr));
+   col+=trans*vec3(.36,.15,.045)*haze*dt*.22;
+   p=next;
+   if(trans<.025)break;
+ }
+ if(!captured)col+=trans*sky(normalize(v));
+ // Restrained optical glare, outside the central shadow.
+ float radial=length(uv),sx=uv.x;
+ float glare=exp(-abs(uv.y)*100.)*exp(-sx*sx*4.)*smoothstep(.09,.2,abs(sx));
+ col+=vec3(.16,.075,.025)*glare;
+ col=vec3(1.)-exp(-col*.9);
+ col=pow(col,vec3(.92));
+ col*=1.-.35*smoothstep(.35,1.,radial);
+ gl_FragColor=vec4(col,1.);
+}
+</script>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const canvas = $('space'), fallback = $('fallback');
+  const angle = $('angle'), zoom = $('zoom'), pause = $('pause'), reset = $('reset');
+  const quality = $('quality'), sound = $('sound'), volume = $('volume');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = reducedMotion.matches, time = 0, last = 0, frame = 0, visible = true;
+  let ctx, master, playing = false, timer, nextNote = 0, noteIndex = 0;
+  // Original ambient composition: a slow pedal, changing open chords and bells.
+  // Everything is synthesized locally. No audio download or licensed soundtrack.
+  const chords = [[45,52,57,60,64],[41,48,53,57,60],[48,55,60,64,67],[43,50,55,59,62]];
+  const hz = n => 440 * Math.pow(2, (n - 69) / 12);
+  function voice(midi, start, duration, strength, bell = false) {
+    const env = ctx.createGain();
+    env.gain.setValueAtTime(0, start);
+    env.gain.linearRampToValueAtTime(strength, start + (bell ? .025 : 1.8));
+    env.gain.exponentialRampToValueAtTime(.0001, start + duration);
+    env.connect(master);
+    [1,2,3].forEach((harmonic, i) => {
+      const osc = ctx.createOscillator(), gain = ctx.createGain();
+      osc.type = 'sine'; osc.frequency.value = hz(midi) * harmonic;
+      osc.detune.value = i === 1 ? 3 : -2;
+      gain.gain.value = i === 0 ? 1 : (bell ? .14 : .1) / harmonic;
+      osc.connect(gain); gain.connect(env); osc.start(start); osc.stop(start + duration + .05);
+      osc.onended = () => { osc.disconnect(); gain.disconnect(); };
+    });
+    setTimeout(() => env.disconnect(), (start - ctx.currentTime + duration + .2) * 1000);
+  }
+  function schedule() {
+    if (!playing || ctx.state !== 'running') return;
+    while (nextNote < ctx.currentTime + .3) {
+      const chord = chords[Math.floor(noteIndex / 8) % chords.length];
+      if (noteIndex % 8 === 0) chord.forEach(n => voice(n, nextNote, 12, .045));
+      const melody = [0,2,3,1,4,2,1,3];
+      voice(chord[melody[noteIndex % 8]] + 12, nextNote, 5, .035, true);
+      nextNote += 1.35; noteIndex++;
+    }
+  }
+  function soundLabel() {
+    sound.textContent = playing ? 'Music on' : 'Music off';
+    sound.setAttribute('aria-pressed', String(playing));
+  }
+  sound.addEventListener('click', async () => {
+    sound.disabled = true;
+    try {
+      if (!ctx) {
+        const Audio = window.AudioContext || window.webkitAudioContext;
+        if (!Audio) throw new Error('Audio is not supported');
+        ctx = new Audio(); master = ctx.createGain(); master.gain.value = 0;
+        const compressor = ctx.createDynamicsCompressor();
+        master.connect(compressor); compressor.connect(ctx.destination);
+        ctx.addEventListener('statechange', () => {
+          if (ctx.state !== 'running' && playing && !document.hidden) {
+            playing = false; clearInterval(timer); soundLabel();
+          }
+        });
+      }
+      if (playing) {
+        playing = false; clearInterval(timer);
+        master.gain.cancelScheduledValues(ctx.currentTime);
+        master.gain.setTargetAtTime(0, ctx.currentTime, .15);
+        await new Promise(resolve => setTimeout(resolve, 650));
+        await ctx.suspend();
+      } else {
+        await ctx.resume(); playing = true;
+        nextNote = Math.max(nextNote, ctx.currentTime + .06);
+        master.gain.cancelScheduledValues(ctx.currentTime);
+        master.gain.setTargetAtTime(Number(volume.value) / 100, ctx.currentTime, .4);
+        schedule(); timer = setInterval(schedule, 120);
+      }
+      soundLabel();
+    } catch (e) {
+      playing = false; clearInterval(timer); soundLabel();
+      $('audio-status').textContent = 'Audio could not start. Try again in your browser.';
+      console.error(e);
+    } finally { sound.disabled = false; }
+  });
+  volume.addEventListener('input', () => {
+    $('volume-value').textContent = volume.value + '%';
+    if (ctx && playing) master.gain.setTargetAtTime(Number(volume.value) / 100, ctx.currentTime, .1);
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && ctx && playing) {
+      playing = false; clearInterval(timer); ctx.suspend(); soundLabel();
+    }
+  });
+  const gl = canvas.getContext('webgl', {alpha:false, antialias:false, powerPreference:'high-performance'});
+  function setPause() { pause.textContent = paused ? 'Resume motion' : 'Pause motion'; pause.setAttribute('aria-pressed', String(paused)); }
+  function fail(message) { fallback.hidden = false; if(message) fallback.textContent = message; [angle,zoom,pause,reset,quality].forEach(el=>el.disabled=true); }
+  setPause();
+  if (!gl) { fail(); return; }
+  function shader(type, source) {
+    const s = gl.createShader(type); gl.shaderSource(s, source); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw Error(gl.getShaderInfoLog(s));
+    return s;
+  }
+  let program;
+  try {
+    program = gl.createProgram();
+    gl.attachShader(program, shader(gl.VERTEX_SHADER, 'attribute vec2 aPos;void main(){gl_Position=vec4(aPos,0.,1.);}'));
+    gl.attachShader(program, shader(gl.FRAGMENT_SHADER, $('frag').textContent));
+    gl.linkProgram(program);
+    if (!gl.getProgramParameter(program,gl.LINK_STATUS)) throw Error(gl.getProgramInfoLog(program));
+    gl.useProgram(program);
+  } catch(e) { console.error(e); fail('The graphics shader could not start. Try a current browser with graphics acceleration enabled.'); return; }
+  const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(program,'aPos'); gl.enableVertexAttribArray(pos); gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+  const res=gl.getUniformLocation(program,'uRes'),tim=gl.getUniformLocation(program,'uTime'),tilt=gl.getUniformLocation(program,'uTilt'),z=gl.getUniformLocation(program,'uZoom');
+  function draw() {
+    gl.uniform2f(res,canvas.width,canvas.height);gl.uniform1f(tim,time);
+    gl.uniform1f(tilt,Number(angle.value)*Math.PI/180);gl.uniform1f(z,Number(zoom.value)/100);
+    gl.drawArrays(gl.TRIANGLES,0,6);
+  }
+  function resize() {
+    const r=canvas.getBoundingClientRect();
+    const maxPixels=quality.value==='high'?1800000:quality.value==='low'?300000:700000;
+    const ratio=Math.min(devicePixelRatio||1,1.5,Math.sqrt(maxPixels/(r.width*r.height)));
+    canvas.width=Math.max(1,Math.round(r.width*ratio));canvas.height=Math.max(1,Math.round(r.height*ratio));
+    gl.viewport(0,0,canvas.width,canvas.height);draw();
+  }
+  new ResizeObserver(resize).observe(canvas); quality.addEventListener('change',resize);
+  function labels() { $('angle-value').textContent=angle.value+'°';$('zoom-value').textContent=(Number(zoom.value)/100).toFixed(1)+'×';draw(); }
+  angle.addEventListener('input',labels);zoom.addEventListener('input',labels);
+  function loop(now) {
+    frame=0;
+    if(!paused&&!document.hidden&&visible){
+      if(last)time+=Math.min((now-last)/1000,.08);
+      draw();last=now;frame=requestAnimationFrame(loop);
+    }else last=0;
+  }
+  function start(){if(!frame&&!paused&&!document.hidden&&visible)frame=requestAnimationFrame(loop);}
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;start();}).observe(canvas);
+  pause.addEventListener('click',()=>{paused=!paused;setPause();start();});
+  reset.addEventListener('click',()=>{angle.value=10;zoom.value=100;time=0;labels();});
+  reducedMotion.addEventListener('change',e=>{paused=e.matches;setPause();start();});
+  document.addEventListener('visibilitychange',()=>{last=0;start();});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();paused=true;setPause();fail('The graphics connection was interrupted. Reload the page to restore the scene.');});
+  resize();start();
+})();
+</script></body></html>
