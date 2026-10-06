@@ -5,9 +5,31 @@
 .controls{bottom:114px;gap:24px}.quality{max-width:145px}select{width:100%;background:#141416;color:#e4ddd4;border:1px solid #ffffff30;border-radius:4px;padding:9px;font:14px Arial}.soundbar{position:absolute;bottom:32px;left:5vw;right:5vw;display:flex;align-items:center;gap:22px}.soundbar .control{max-width:180px}.soundbar .control label{margin-bottom:3px}.soundbar button{min-width:100px}#audio-status{font-size:12px;color:#99948e}.soundbar .about-link{margin-left:auto}.caption{bottom:240px}.indicator{bottom:245px}.intro{top:13%}
 @media(max-width:800px){.controls{flex-wrap:wrap;gap:14px;bottom:133px}.controls .control{flex:1 1 25%;max-width:none}.actions{margin-left:0}.caption{bottom:310px}.indicator{bottom:315px}.soundbar{flex-wrap:wrap;gap:12px;bottom:24px}.soundbar .control{max-width:none;flex:1}#audio-status{order:4;flex-basis:100%;font-size:12px}.soundbar .about-link{margin-left:0}.intro{top:12%}.hero{min-height:910px}}@media(max-width:410px){.indicator{display:none}.controls .control{flex-basis:35%}.controls .quality{flex-basis:100%}.controls .actions{width:100%}.controls{bottom:150px}.caption{bottom:390px}.hero{min-height:980px}h1{font-size:8vw}}
 @media(max-width:800px){.caption,.indicator{display:none}}
+
+.nebula{padding:80px 6vw 20px;max-width:1250px;margin:auto;scroll-margin-top:25px}
+.nebula-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}
+.nebula-heading h2{font-size:clamp(32px,5vw,60px)}
+.nebula-credit{font-size:14px;color:#aaa29b;line-height:1.7;text-align:right}
+.nebula-player{margin:0;background:#090a0d;border:1px solid #ffffff20;border-radius:8px;overflow:hidden}
+.nebula-player video{display:block;width:100%;max-height:78svh;aspect-ratio:766/512;object-fit:contain;background:#050608}
+.nebula-player figcaption{padding:18px 22px;font-size:14px;color:#b7aca1;line-height:1.6;border-top:1px solid #ffffff16}
+.nebula-note{font-size:14px;color:#99948e;line-height:1.7;margin-top:16px}
+@media(max-width:650px){.nebula{padding:55px 6vw 10px}.nebula-heading{display:block}.nebula-credit{text-align:left;margin:18px 0 0}.nebula-player figcaption{padding:14px}.nebula-player video{max-height:none}}
 </style></head><body>
 <header><a href="#" class="brand" aria-label="Qara Tuynik home"><i aria-hidden="true"></i>QARA TUYNIK</a><span class="edition">A COSMIC EXPLORATION</span></header>
-<main><section class="hero" aria-label="Interactive black hole"><canvas id="space" role="img" aria-label="Animated artistic black hole with a flowing golden accretion disk and star field"></canvas><div id="fallback" hidden>This browser cannot display the interactive scene. Please open this file in a browser with WebGL enabled.</div><div class="intro"><p class="eyebrow">Beyond the visible</p><h1><span>QARA TUYNIK</span></h1><p class="cyrillic" lang="kaa">Қара түйник</p></div><div class="caption"><strong>The edge of light</strong><p>A journey into the darkness<br>that shapes the universe.</p></div><div class="indicator">01 / BLACK HOLE<b>AN ARTISTIC EXPLORATION</b></div><div class="controls"><div class="control"><label for="angle">Viewing angle <output id="angle-value">10°</output></label><input id="angle" type="range" min="3" max="55" value="10"></div><div class="control"><label for="zoom">Zoom <output id="zoom-value">1.0×</output></label><input id="zoom" type="range" min="70" max="140" value="100"></div><div class="control quality"><label for="quality">Detail</label><select id="quality"><option value="low">Low · faster</option><option value="balanced" selected>Balanced</option><option value="high">High</option></select></div><div class="actions"><button id="pause" type="button" aria-pressed="false">Pause motion</button><button id="reset" type="button">Reset</button></div></div><div class="soundbar"><button id="sound" type="button" aria-pressed="false">Music off</button><div class="control"><label for="volume">Volume <output id="volume-value">35%</output></label><input id="volume" type="range" min="0" max="100" value="35"></div><span id="audio-status" role="status">Original ambient score</span><a class="about-link" href="#discover">Discover</a></div></section>
+<main><section class="hero" aria-label="Interactive black hole"><canvas id="space" role="img" aria-label="Animated artistic black hole with a flowing golden accretion disk and star field"></canvas><div id="fallback" hidden>This browser cannot display the interactive scene. Please open this file in a browser with WebGL enabled.</div><div class="intro"><p class="eyebrow">Beyond the visible</p><h1><span>QARA TUYNIK</span></h1><p class="cyrillic" lang="kaa">Қара түйник</p></div><div class="caption"><strong>The edge of light</strong><p>A journey into the darkness<br>that shapes the universe.</p></div><div class="indicator">01 / BLACK HOLE<b>AN ARTISTIC EXPLORATION</b></div><div class="controls"><div class="control"><label for="angle">Viewing angle <output id="angle-value">10°</output></label><input id="angle" type="range" min="3" max="55" value="10"></div><div class="control"><label for="zoom">Zoom <output id="zoom-value">1.0×</output></label><input id="zoom" type="range" min="70" max="140" value="100"></div><div class="control quality"><label for="quality">Detail</label><select id="quality"><option value="low">Low · faster</option><option value="balanced" selected>Balanced</option><option value="high">High</option></select></div><div class="actions"><button id="pause" type="button" aria-pressed="false">Pause motion</button><button id="reset" type="button">Reset</button></div></div><div class="soundbar"><button id="sound" type="button" aria-pressed="false">Music off</button><div class="control"><label for="volume">Volume <output id="volume-value">35%</output></label><input id="volume" type="range" min="0" max="100" value="35"></div><span id="audio-status" role="status">Original ambient score</span><a class="about-link" href="#heart-nebula">Heart Nebula</a></div></section>
+<section class="nebula" id="heart-nebula" aria-labelledby="nebula-title">
+<div class="nebula-heading"><div><p class="eyebrow">Through my telescope</p><h2 id="nebula-title">The Heart Nebula</h2></div><p class="nebula-credit">Astrophotography by I. Urazov<br>A slow journey through the stars</p></div>
+<figure class="nebula-player">
+<video id="nebula-video" controls muted loop playsinline preload="none" poster="assets/heart-nebula-poster.jpg" aria-label="Heart Nebula astrophotography with a slow zoom in and out" aria-describedby="nebula-description">
+<source src="assets/heart-nebula.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/heart-nebula.mp4">Download the Heart Nebula video</a>.
+</video>
+<figcaption id="nebula-description">Golden clouds and dark dust, drifting across a field of stars. Press play to explore.</figcaption>
+</figure>
+<p class="nebula-note">Silent video · Use the player's controls to pause or enter fullscreen. Ambient music is available above.</p>
+<p id="video-status" class="nebula-note" role="status"></p>
+</section>
 <section class="about" id="discover"><div class="about-head"><div><p class="eyebrow">A window into the unknown</p><h2>Darkness at the centre.<br>Light all around.</h2></div><p>A black hole gives off no light from within its event horizon. What we can see is its influence: matter heating as it spirals inward, and light taking curved paths through the space around it.</p></div><div class="facts"><article class="fact"><span class="number">01 — THE BOUNDARY</span><h3>Event horizon</h3><p>The boundary beyond which light cannot escape. The apparent dark shadow is larger than the horizon itself.</p></article><article class="fact"><span class="number">02 — THE GLOW</span><h3>Accretion disk</h3><p>Gas orbiting a black hole can become intensely hot. The luminous disk reveals matter in motion around an otherwise invisible object.</p></article><article class="fact"><span class="number">03 — THE DISTORTION</span><h3>Gravitational lensing</h3><p>Gravity bends the paths of light. Parts of the far side of a disk can appear above and below the black hole.</p></article></div><footer><span>QARA TUYNIK | Қара түйник · I. Urazov</span><span>Approximate ray tracing · Artistic colour and sound</span></footer></section></main>
 <script id="frag" type="x-shader/x-fragment">
 precision highp float;
@@ -86,6 +108,21 @@ void main(){
   const canvas = $('space'), fallback = $('fallback');
   const angle = $('angle'), zoom = $('zoom'), pause = $('pause'), reset = $('reset');
   const quality = $('quality'), sound = $('sound'), volume = $('volume');
+  const nebulaVideo = $('nebula-video');
+  // Native playback controls retain user control; never force autoplay.
+  nebulaVideo.addEventListener('error', () => {
+    $('video-status').textContent = 'The video could not load. Check that the assets folder was uploaded beside index.html.';
+  });
+  const source = nebulaVideo.querySelector('source');
+  source.addEventListener('error', () => {
+    $('video-status').textContent = 'Video unavailable. Upload assets/heart-nebula.mp4 alongside this page.';
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) nebulaVideo.pause();
+  });
+  new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) nebulaVideo.pause();
+  }, {threshold: 0}).observe(nebulaVideo);
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let paused = reducedMotion.matches, time = 0, last = 0, frame = 0, visible = true;
   let ctx, master, playing = false, timer, nextNote = 0, noteIndex = 0;
