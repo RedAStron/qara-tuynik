@@ -15,9 +15,34 @@
 .nebula-player figcaption{padding:18px 22px;font-size:14px;color:#b7aca1;line-height:1.6;border-top:1px solid #ffffff16}
 .nebula-note{font-size:14px;color:#99948e;line-height:1.7;margin-top:16px}
 @media(max-width:650px){.nebula{padding:55px 6vw 10px}.nebula-heading{display:block}.nebula-credit{text-align:left;margin:18px 0 0}.nebula-player figcaption{padding:14px}.nebula-player video{max-height:none}}
+
+.collection{padding:95px 6vw 70px;max-width:1400px;margin:auto;scroll-margin-top:25px}
+.collection-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:32px}
+.collection h2{font-size:clamp(40px,7vw,86px);letter-spacing:-.045em;font-weight:400}
+.collection-sub{font-size:16px;line-height:1.7;color:#b6aaa0;max-width:360px;margin:20px 0 0}
+.collection-frame{margin:0;border:1px solid #c6a78445;border-radius:8px;overflow:hidden;background:#070709;box-shadow:0 20px 90px #79603f12}
+.collection video{display:block;width:100%;aspect-ratio:910/512;max-height:78svh;object-fit:contain;background:#050608}
+.film-caption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;background:#0e0e11;border-top:1px solid #ffffff14}
+.film-caption p{margin:0;font-size:14px;color:#aaa19a;line-height:1.7}.film-caption strong{font-weight:400;color:#e8ddd3}
+.film-meta{font:12px monospace;color:#d1aa84;letter-spacing:.12em;white-space:nowrap}
+#collection-play{background:#e6c9a5;color:#17110c;border:0;min-width:160px}
+.collection-note{color:#a89d93;font-size:14px;line-height:1.7}
+.edition:hover{color:#e6c9a5}
+@media(max-width:650px){.collection{padding:60px 6vw 30px}.collection-top{align-items:start;flex-direction:column;gap:24px}.film-caption{padding:16px;align-items:start;flex-direction:column;gap:10px}.collection video{max-height:none}.collection h2{font-size:14vw}}
 </style></head><body>
-<header><a href="#" class="brand" aria-label="Qara Tuynik home"><i aria-hidden="true"></i>QARA TUYNIK</a><span class="edition">A COSMIC EXPLORATION</span></header>
+<header><a href="#" class="brand" aria-label="Qara Tuynik home"><i aria-hidden="true"></i>QARA TUYNIK</a><a class="edition" href="#collection">MY ASTROPHOTOGRAPHY</a></header>
 <main><section class="hero" aria-label="Interactive black hole"><canvas id="space" role="img" aria-label="Animated artistic black hole with a flowing golden accretion disk and star field"></canvas><div id="fallback" hidden>This browser cannot display the interactive scene. Please open this file in a browser with WebGL enabled.</div><div class="intro"><p class="eyebrow">Beyond the visible</p><h1><span>QARA TUYNIK</span></h1><p class="cyrillic" lang="kaa">Қара түйник</p></div><div class="caption"><strong>The edge of light</strong><p>A journey into the darkness<br>that shapes the universe.</p></div><div class="indicator">01 / BLACK HOLE<b>AN ARTISTIC EXPLORATION</b></div><div class="controls"><div class="control"><label for="angle">Viewing angle <output id="angle-value">10°</output></label><input id="angle" type="range" min="3" max="55" value="10"></div><div class="control"><label for="zoom">Zoom <output id="zoom-value">1.0×</output></label><input id="zoom" type="range" min="70" max="140" value="100"></div><div class="control quality"><label for="quality">Detail</label><select id="quality"><option value="low">Low · faster</option><option value="balanced" selected>Balanced</option><option value="high">High</option></select></div><div class="actions"><button id="pause" type="button" aria-pressed="false">Pause motion</button><button id="reset" type="button">Reset</button></div></div><div class="soundbar"><button id="sound" type="button" aria-pressed="false">Music off</button><div class="control"><label for="volume">Volume <output id="volume-value">35%</output></label><input id="volume" type="range" min="0" max="100" value="35"></div><span id="audio-status" role="status">Original ambient score</span><a class="about-link" href="#heart-nebula">Heart Nebula</a></div></section>
+<section class="collection" id="collection" aria-labelledby="collection-title">
+<div class="collection-top"><div><p class="eyebrow">Collected under the night sky</p><h2 id="collection-title">My night sky.</h2><p class="collection-sub">From the Moon to luminous clouds of gas and dust. My astrophotography, in motion.</p></div><button type="button" id="collection-play" aria-controls="collection-video">Play film with sound</button></div>
+<figure class="collection-frame">
+<video id="collection-video" controls playsinline preload="none" poster="assets/collection-poster.jpg" aria-label="I. Urazov's astrophotography collection with original audio" aria-describedby="collection-caption">
+<source src="assets/astro-collection.mp4" type="video/mp4">
+Your browser cannot play this film. <a href="assets/astro-collection.mp4">Download the collection</a>.
+</video>
+<figcaption class="film-caption" id="collection-caption"><p><strong>An astrophotography collection</strong><br>Captured and assembled by I. Urazov</p><span class="film-meta">00:16 &nbsp; / &nbsp; ORIGINAL SOUND</span></figcaption>
+</figure><p class="collection-note">Play with sound for the full experience. Background music pauses while this film plays.</p>
+<p id="collection-status" class="collection-note" role="status"></p>
+</section>
 <section class="nebula" id="heart-nebula" aria-labelledby="nebula-title">
 <div class="nebula-heading"><div><p class="eyebrow">Through my telescope</p><h2 id="nebula-title">The Heart Nebula</h2></div><p class="nebula-credit">Astrophotography by I. Urazov<br>A slow journey through the stars</p></div>
 <figure class="nebula-player">
@@ -126,6 +151,40 @@ void main(){
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let paused = reducedMotion.matches, time = 0, last = 0, frame = 0, visible = true;
   let ctx, master, playing = false, timer, nextNote = 0, noteIndex = 0;
+  const collection = $('collection-video'), collectionPlay = $('collection-play');
+  function silenceAmbient() {
+    playing = false; clearInterval(timer);
+    if (ctx) {
+      master.gain.cancelScheduledValues(ctx.currentTime);
+      master.gain.setValueAtTime(0, ctx.currentTime);
+      ctx.suspend().catch(() => {});
+    }
+    soundLabel();
+  }
+  collection.addEventListener('play', () => {
+    silenceAmbient(); nebulaVideo.pause();
+    collectionPlay.textContent = 'Pause film';
+  });
+  collection.addEventListener('pause', () => {
+    collectionPlay.textContent = collection.ended ? 'Replay with sound' : 'Play film with sound';
+  });
+  collection.addEventListener('ended', () => { collectionPlay.textContent = 'Replay with sound'; });
+  collectionPlay.addEventListener('click', async () => {
+    if (!collection.paused) { collection.pause(); return; }
+    collection.muted = false;
+    if (collection.ended) collection.currentTime = 0;
+    try { await collection.play(); $('collection-status').textContent = ''; }
+    catch { $('collection-status').textContent = 'Use the video player’s play button to start the film.'; }
+  });
+  collection.querySelector('source').addEventListener('error', () => {
+    $('collection-status').textContent = 'Film unavailable. Upload assets/astro-collection.mp4 beside this page.';
+  });
+  collection.addEventListener('error', () => {
+    $('collection-status').textContent = 'The film could not load. Check the uploaded assets folder.';
+  });
+  document.addEventListener('visibilitychange', () => { if(document.hidden) collection.pause(); });
+  new IntersectionObserver(entries => { if(!entries[0].isIntersecting) collection.pause(); }).observe(collection);
+  nebulaVideo.addEventListener('play', () => { collection.pause(); });
   // Original ambient composition: a slow pedal, changing open chords and bells.
   // Everything is synthesized locally. No audio download or licensed soundtrack.
   const chords = [[45,52,57,60,64],[41,48,53,57,60],[48,55,60,64,67],[43,50,55,59,62]];
@@ -162,6 +221,7 @@ void main(){
   }
   sound.addEventListener('click', async () => {
     sound.disabled = true;
+    collection.pause();
     try {
       if (!ctx) {
         const Audio = window.AudioContext || window.webkitAudioContext;
@@ -182,7 +242,9 @@ void main(){
         await new Promise(resolve => setTimeout(resolve, 650));
         await ctx.suspend();
       } else {
-        await ctx.resume(); playing = true;
+        await ctx.resume();
+        if (!collection.paused) { await ctx.suspend(); return; }
+        playing = true;
         nextNote = Math.max(nextNote, ctx.currentTime + .06);
         master.gain.cancelScheduledValues(ctx.currentTime);
         master.gain.setTargetAtTime(Number(volume.value) / 100, ctx.currentTime, .4);
