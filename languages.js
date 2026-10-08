@@ -5,6 +5,13 @@
 (() => {
   'use strict';
   const latin = {
+    "From Nukus to the stars": "Nókisten juldızlarǵa",
+    "As a child growing up in Nukus, Karakalpakstan, I dreamed of becoming a cosmonaut. I collected astronomy books and tried to understand the distant worlds above me.": "Qaraqalpaqstannıń Nókis qalasında ósken bala waqtımda kosmonavt bolıwdı árman etetuǵın edim. Astronomiya kitapların jıynap, tóbedegi alıs álemlerdi túsiniwge háreket etetuǵın edim.",
+    "I remember watching rocket trails stretch across the sky—flights from Baikonur leaving beautiful traces near the horizon. Seeing them made space feel closer, like somewhere people could actually go.": "Aspanda sozılǵan raketa izlerin kórgenim ele yadımda — Bayqońırdan ushqan raketalar gorizontqa jaqın jerde sulıw izler qaldıratuǵın edi. Olardı kórgende kosmos jaqınıraq, adamlar barıwı múmkin bolǵan orınday seziletuǵın edi.",
+    "Some of my clearest memories are of returning home late at night after visiting relatives. Above us, the stars shone brightly, and the Milky Way stretched across the sky. I would look up and wonder how far it went, and what might be waiting out there.": "Eń anıq este qalǵan esliklerimniń biri — tuwısqanlardıń úyinen kesh túnde úyge qaytqan waqıtlarım. Tóbemizde juldızlar jarqırap, Qus jolı aspan boylap sozılıp turatuǵın edi. Joqarıǵa qarap, onıń qanshelli alısqa sozılǵanın hám ol jaqta neler bar ekenin oylaytuǵın edim.",
+    "Today, living in the Netherlands, I explore that same sky through a telescope and a camera. Learning to photograph nebulae and galaxies has given my childhood curiosity a new direction.": "Búgin Niderlandiyada jasap, sol aspandı teleskop hám kamera arqalı izertleymen. Tumanlıqlar hám galaktikalardı súwretke túsiriwdi úyreniw balalıq qızıǵıwshılıǵıma jańa baǵdar berdi.",
+    "QARA TUYNIK is where I share that journey—from the skies I remember over Karakalpakstan to the light I collect from my garden today.": "QARA TUYNIK — Qaraqalpaqstan ústindegi esimde qalǵan aspannan búgin baǵımda jıynaytuǵın jaqtılıqqa shekemgi sayaxatım menen bólisetuǵın ornım.",
+
     'Photographs': 'Súwretler',
     'Films': 'Filmler',
     'About me': 'Men haqqında',
