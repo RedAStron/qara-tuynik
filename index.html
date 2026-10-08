@@ -69,13 +69,13 @@ Your browser cannot play this film. <a href="assets/astro-collection.mp4">Downlo
 <section class="nebula" id="heart-nebula" aria-labelledby="nebula-title">
 <div class="nebula-heading"><div><p class="eyebrow">Through my telescope</p><h2 id="nebula-title">The Heart Nebula</h2></div><p class="nebula-credit">Astrophotography by I. Urazov<br>A slow journey through the stars</p></div>
 <figure class="nebula-player">
-<video id="nebula-video" controls muted loop playsinline preload="none" poster="assets/heart-nebula-poster.jpg" aria-label="Heart Nebula astrophotography with a slow zoom in and out" aria-describedby="nebula-description">
-<source src="assets/heart-nebula.mp4" type="video/mp4">
-Your browser cannot play this video. <a href="assets/heart-nebula.mp4">Download the Heart Nebula video</a>.
+<video id="nebula-video" controls loop playsinline preload="none" poster="assets/heart-nebula-sound-poster.jpg" aria-label="Heart Nebula astrophotography with sound" aria-describedby="nebula-description">
+<source src="assets/heart-nebula-sound.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/heart-nebula-sound.mp4">Download the Heart Nebula video</a>.
 </video>
 <figcaption id="nebula-description">Golden clouds and dark dust, drifting across a field of stars. Press play to explore.</figcaption>
 </figure>
-<p class="nebula-note">Silent video · Use the player's controls to pause or enter fullscreen. Ambient music is available above.</p>
+<p class="nebula-note">Play with sound · Use the player's controls to pause or enter fullscreen. Background music pauses while this video plays.</p>
 <p id="video-status" class="nebula-note" role="status"></p>
 </section>
 <section class="observer" id="observer" aria-labelledby="observer-title"><div class="observer-main"><img src="assets/gallery/islam-telescope.jpg" alt="Islam beside his telescope in the garden" loading="lazy" decoding="async"><div class="observer-copy"><p class="eyebrow">Behind the telescope</p><h2 id="observer-title">I'm Islam Urazov.</h2><p>I'm from Nukus, (Karakalpakstan) Uzbekistan, and live in the Netherlands. This is where I share my astrophotography and my curiosity about the universe.</p><p>QARA TUYNIK brings those interests together: photographs of the night sky, films made from my images, and an exploration of black holes.</p><p>From a telescope in the garden to distant clouds of light.</p></div></div><div class="observer-scenes"><figure><img src="assets/gallery/under-the-stars.jpg" alt="Islam and his telescope beneath the night sky" loading="lazy" decoding="async"><figcaption>Under the stars — where the photographs begin.</figcaption></figure><figure><img src="assets/gallery/telescope.jpg" alt="Close-up of a red and black astrophotography telescope and camera" loading="lazy" decoding="async"><figcaption>A closer look at one of my imaging setups.</figcaption></figure></div></section><section class="about" id="discover"><div class="about-head"><div><p class="eyebrow">A window into the unknown</p><h2>Darkness at the centre.<br>Light all around.</h2></div><p>A black hole gives off no light from within its event horizon. What we can see is its influence: matter heating as it spirals inward, and light taking curved paths through the space around it.</p></div><div class="facts"><article class="fact"><span class="number">01 — THE BOUNDARY</span><h3>Event horizon</h3><p>The boundary beyond which light cannot escape. The apparent dark shadow is larger than the horizon itself.</p></article><article class="fact"><span class="number">02 — THE GLOW</span><h3>Accretion disk</h3><p>Gas orbiting a black hole can become intensely hot. The luminous disk reveals matter in motion around an otherwise invisible object.</p></article><article class="fact"><span class="number">03 — THE DISTORTION</span><h3>Gravitational lensing</h3><p>Gravity bends the paths of light. Parts of the far side of a disk can appear above and below the black hole.</p></article></div><footer><span>QARA TUYNIK | Қара түйник · I. Urazov</span><span>Approximate ray tracing · Artistic colour and sound</span></footer></section></main><dialog id="photo-viewer" aria-labelledby="viewer-title"><div class="viewer-top"><h2 id="viewer-title"></h2><button id="viewer-close" type="button">Close</button></div><div class="viewer-stage"><img id="viewer-image" alt=""></div><p id="viewer-error" class="viewer-error" role="status"></p><div class="viewer-bottom"><p id="viewer-description"></p><nav aria-label="Photo navigation"><span id="viewer-count" aria-live="polite"></span><button id="viewer-prev" type="button">Previous</button><button id="viewer-next" type="button">Next</button><a id="viewer-original" target="_blank" rel="noopener">Open full image</a></nav></div></dialog>
@@ -198,7 +198,7 @@ new MutationObserver(()=>{byId('immersive-pause').textContent=byId('pause').text
   });
   const source = nebulaVideo.querySelector('source');
   source.addEventListener('error', () => {
-    $('video-status').textContent = 'Video unavailable. Upload assets/heart-nebula.mp4 alongside this page.';
+    $('video-status').textContent = 'Video unavailable. Upload assets/heart-nebula-sound.mp4 alongside this page.';
   });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) nebulaVideo.pause();
@@ -242,7 +242,7 @@ new MutationObserver(()=>{byId('immersive-pause').textContent=byId('pause').text
   });
   document.addEventListener('visibilitychange', () => { if(document.hidden) collection.pause(); });
   new IntersectionObserver(entries => { if(!entries[0].isIntersecting) collection.pause(); }).observe(collection);
-  nebulaVideo.addEventListener('play', () => { collection.pause(); });
+  nebulaVideo.addEventListener('play', () => { silenceAmbient(); collection.pause(); });
   // Original ambient composition: a slow pedal, changing open chords and bells.
   // Everything is synthesized locally. No audio download or licensed soundtrack.
   const chords = [[45,52,57,60,64],[41,48,53,57,60],[48,55,60,64,67],[43,50,55,59,62]];
@@ -280,6 +280,7 @@ new MutationObserver(()=>{byId('immersive-pause').textContent=byId('pause').text
   sound.addEventListener('click', async () => {
     sound.disabled = true;
     collection.pause();
+    nebulaVideo.pause();
     try {
       if (!ctx) {
         const Audio = window.AudioContext || window.webkitAudioContext;
@@ -301,7 +302,7 @@ new MutationObserver(()=>{byId('immersive-pause').textContent=byId('pause').text
         await ctx.suspend();
       } else {
         await ctx.resume();
-        if (!collection.paused) { await ctx.suspend(); return; }
+        if (!collection.paused || !nebulaVideo.paused) { await ctx.suspend(); return; }
         playing = true;
         nextNote = Math.max(nextNote, ctx.currentTime + .06);
         master.gain.cancelScheduledValues(ctx.currentTime);
