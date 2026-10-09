@@ -49,6 +49,15 @@
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 
 .nukus-story{max-width:820px;margin:65px auto 50px;padding:35px 0;border-top:1px solid #b58a594d}.nukus-story h2{font-size:clamp(30px,4vw,48px);line-height:1.2;margin:0 0 28px}.nukus-story p{color:#beb4a9;font-size:18px;line-height:1.9;margin:0 0 22px}.nukus-story p:last-child{color:#e4c6a4;margin-bottom:0}@media(max-width:650px){.nukus-story{margin:40px 0 30px;padding-top:25px}.nukus-story p{font-size:16px;line-height:1.85}}
+/* Always-visible underlines for the six gallery comparison links. */
+#gallery .photo-card > p > a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #e2c09b;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  text-decoration-skip-ink: auto;
+}
 </style></head><body>
 <header><a href="#" class="brand" aria-label="Qara Tuynik home"><i aria-hidden="true"></i>QARA TUYNIK</a><nav class="site-nav" aria-label="Main navigation"><a href="#gallery">Photographs</a><a href="#collection">Films</a><a href="#observer">About me</a></nav></header>
 <main><section class="hero" aria-label="Interactive black hole"><canvas id="space" role="img" aria-label="Animated artistic black hole with a flowing golden accretion disk and star field"></canvas><div id="fallback" hidden>This browser cannot display the interactive scene. Please open this file in a browser with WebGL enabled.</div><div class="intro"><p class="eyebrow">Beyond the visible</p><h1><span>QARA TUYNIK</span></h1><p class="cyrillic" lang="kaa">Қара түйник</p></div><div class="hero-entry"><button id="immersive-open" type="button">Explore the black hole</button></div><div class="immersive-bar"><button id="immersive-close" type="button">Exit exploration</button><button id="immersive-pause" type="button">Pause motion</button></div><div class="caption"><strong>The edge of light</strong><p>A journey into the darkness<br>that shapes the universe.</p></div><div class="indicator">01 / BLACK HOLE<b>AN ARTISTIC EXPLORATION</b></div><div class="controls"><div class="control"><label for="angle">Viewing angle <output id="angle-value">10°</output></label><input id="angle" type="range" min="3" max="55" value="10"></div><div class="control"><label for="zoom">Zoom <output id="zoom-value">1.0×</output></label><input id="zoom" type="range" min="70" max="140" value="100"></div><div class="control quality"><label for="quality">Detail</label><select id="quality"><option value="low">Low · faster</option><option value="balanced" selected>Balanced</option><option value="high">High</option></select></div><div class="actions"><button id="pause" type="button" aria-pressed="false">Pause motion</button><button id="reset" type="button">Reset</button></div></div><div class="soundbar"><button id="sound" type="button" aria-pressed="false">Music off</button><div class="control"><label for="volume">Volume <output id="volume-value">35%</output></label><input id="volume" type="range" min="0" max="100" value="35"></div><span id="audio-status" role="status">Original ambient score</span><a class="about-link" href="#heart-nebula">Heart Nebula</a></div></section>
