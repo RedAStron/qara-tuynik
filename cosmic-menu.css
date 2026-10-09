@@ -1,0 +1,22 @@
+header .brand[aria-haspopup]{border-radius:6px;min-height:44px;cursor:pointer}
+header .brand[aria-haspopup]:hover i,header .brand[aria-expanded="true"] i{box-shadow:0 0 22px #e2ac70;border-color:#ffe0ab}
+#cosmic-menu{padding:0;width:min(620px,calc(100% - 32px));max-height:calc(100svh - 32px);overflow:auto;background:#090a10;color:#f3eee8;border:1px solid #9c744a;border-radius:20px;box-shadow:0 0 90px #ba7b3026}
+#cosmic-menu::backdrop{background:#020307e8;backdrop-filter:blur(8px)}
+#cosmic-menu .portal-body{position:relative;padding:28px clamp(22px,5vw,48px) 36px;text-align:center;overflow:hidden}
+#cosmic-menu .portal-close{display:block;margin-left:auto;position:relative;z-index:2;min-width:80px}
+#cosmic-menu .portal-sky{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+#cosmic-menu .portal-star{position:absolute;width:2px;height:2px;background:#edd7ad;border-radius:50%;opacity:.65}
+#cosmic-menu[open] .portal-star{animation:portal-fall 850ms ease-in-out both}
+@keyframes portal-fall{from{transform:translate(0,0);opacity:0}40%{opacity:.9}to{transform:translate(var(--dx),var(--dy));opacity:.15}}
+#cosmic-menu .portal-ring{position:relative;width:112px;height:112px;margin:10px auto 28px;border-radius:50%;background:#020204;border:2px solid #e9bd80;box-shadow:0 0 8px #ffd696,inset 0 0 15px #cf914350,0 0 45px #cf914340}
+#cosmic-menu .portal-ring:after{content:'';position:absolute;inset:35% -30%;border:1px solid #f8d9a0;border-radius:50%;transform:rotate(-20deg);box-shadow:0 0 12px #e6af6970}
+#cosmic-menu[open] .portal-ring{animation:portal-arrive 700ms ease-out}
+@keyframes portal-arrive{from{transform:scale(.65);opacity:0}to{transform:scale(1);opacity:1}}
+#cosmic-menu h2{font-size:clamp(26px,5vw,40px);margin:0 0 12px}
+#cosmic-menu .portal-sub{color:#b8aea3;line-height:1.6;margin:0 0 26px}
+#cosmic-menu nav{display:grid;gap:10px;position:relative}
+#cosmic-menu nav a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;text-align:left;border:1px solid #a9804e55;border-radius:9px;padding:15px 18px;color:#e7c79e;background:#111118;text-decoration:none}
+#cosmic-menu nav a:hover{background:#241c15;border-color:#d4a469}
+#cosmic-menu .portal-home{display:inline-block;margin-top:24px;padding:10px;color:#b9afa5;text-decoration:underline;text-underline-offset:5px}
+#cosmic-menu a:focus-visible,#cosmic-menu button:focus-visible{outline:2px solid #ffe0ab;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#cosmic-menu[open] .portal-star,#cosmic-menu[open] .portal-ring{animation:none}}
