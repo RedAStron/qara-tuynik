@@ -16,10 +16,15 @@
   function localize() {
     const t = texts[document.documentElement.lang] || texts.en;
     modal.querySelectorAll('[data-portal]').forEach(el => {const value=t[el.dataset.portal];if(el.textContent!==value)el.textContent=value;});
-    logo.setAttribute('aria-label',t.open);
-    modal.querySelector('nav').setAttribute('aria-label',t.open);
+    if (logo.getAttribute('aria-label') !== t.open) logo.setAttribute('aria-label',t.open);
+    const nav = modal.querySelector('nav');
+    if (nav.getAttribute('aria-label') !== t.open) nav.setAttribute('aria-label',t.open);
   }
-  new MutationObserver(localize).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  // Listen to the user's selection, not the translation engine's DOM writes.
+  // Observing html.lang caused a feedback loop with languages.js.
+  document.addEventListener('change', event => {
+    if (event.target.id === 'site-language') localize();
+  });
   localize();
   const sky = modal.querySelector('.portal-sky');
   for (let i=0;i<32;i++) {
