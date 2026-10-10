@@ -127,9 +127,9 @@
     const map = {a:'а',á:'ә',b:'б',d:'д',e:'е',f:'ф',g:'г',ǵ:'ғ',h:'ҳ',x:'х',ı:'ы',i:'и',j:'ж',k:'к',q:'қ',l:'л',m:'м',n:'н',ń:'ң',o:'о',ó:'ө',p:'п',r:'р',s:'с',t:'т',u:'у',ú:'ү',v:'в',w:'ў',y:'й',z:'з',c:'ц'};
     return text.split(/(WebGL|QARA TUYNIK|I\. Urazov|index\.html|assets\/[a-z.-]+\.mp4|assets)/g).map(part => {
       if (/^(WebGL|QARA TUYNIK|I\. Urazov|index\.html|assets(?:\/.*)?)$/.test(part)) return part;
-      return part.replace(/sh|ch|[a-záǵıńóú]/gi, ch => {
+      return part.replace(/sh|ch|ya|[a-záǵıńóú]/gi, ch => {
         const lower=ch.toLowerCase();
-        const result=lower==='sh'?'ш':lower==='ch'?'ч':map[lower]||ch;
+        const result=lower==='sh'?'ш':lower==='ch'?'ч':lower==='ya'?'я':map[lower]||ch;
         return ch[0]===ch[0].toUpperCase()?result.toUpperCase():result;
       });
     }).join('');
