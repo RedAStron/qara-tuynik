@@ -137,23 +137,25 @@
   const normalize = s => s.replace(/\s+/g,' ').trim();
   const entries = new Map();
   function add(en, lat) {
-    const row={en, 'kaa-Latn':lat, 'kaa-Cyrl':cyrillic(lat)};
+    const row={en, nl:window.QARA_DUTCH?.[en]||en, 'kaa-Latn':lat, 'kaa-Cyrl':lat===en?en:cyrillic(lat)};
     for (const value of Object.values(row)) if (!entries.has(normalize(value))) entries.set(normalize(value), row);
   }
   Object.entries(latin).forEach(([en,lat])=>add(en,lat));
+  Object.keys(window.QARA_DUTCH||{}).filter(en=>!latin[en]).forEach(en=>add(en,en));
   // Gallery accessible names combine titles and descriptions.
   document.querySelectorAll('.photo-card').forEach(card=>{
     const title=card.querySelector('h3').textContent;
     const description=card.querySelector('p').textContent;
+    if(window.QARA_DUTCH){window.QARA_DUTCH['Enlarge '+title]='Vergroot '+(window.QARA_DUTCH[title]||title);window.QARA_DUTCH[title+': '+description]=(window.QARA_DUTCH[title]||title)+': '+(window.QARA_DUTCH[description]||description);}
     add('Enlarge '+title, latin[title]+' — úlkeytip kóriw');
     add(title+': '+description, latin[title]+': '+latin[description]);
   });
   let language='en';
-  try { const saved=localStorage.getItem('qara-language'); if(['en','kaa-Latn','kaa-Cyrl'].includes(saved)) language=saved; } catch {}
+  try { const saved=localStorage.getItem('qara-language'); if(['en','nl','kaa-Latn','kaa-Cyrl'].includes(saved)) language=saved; } catch {}
   const selector=document.createElement('select');
   selector.id='site-language';
   selector.setAttribute('aria-label','Language / Til / Тил');
-  [['en','English'],['kaa-Latn','Qaraqalpaqsha · Latin'],['kaa-Cyrl','Қарақалпақша · Кирилл']].forEach(([value,label])=>{
+  [['en','English'],['nl','Nederlands'],['kaa-Latn','Qaraqalpaqsha · Latin'],['kaa-Cyrl','Қарақалпақша · Кирилл']].forEach(([value,label])=>{
     const option=document.createElement('option'); option.value=value; option.textContent=label; option.lang=value; selector.append(option);
   });
   selector.value=language;
@@ -161,7 +163,7 @@
   const style=document.createElement('style');
   style.textContent=`header{flex-wrap:wrap}#site-language{width:auto;max-width:100%;min-height:44px;border-color:#9b7954;color:#ead4b8;background:#111114;padding:8px 10px;font-size:13px}#site-language:focus-visible{outline:2px solid #ffd6a5;outline-offset:4px}.site-nav{flex-wrap:wrap}.controls .actions{flex-wrap:wrap}html[lang^="kaa"] .eyebrow{letter-spacing:.15em}html[lang^="kaa"] .film-meta{white-space:normal}@media(max-width:650px){header{gap:10px;padding-top:16px}.site-nav{order:3;width:100%;gap:20px}#site-language{max-width:55%;font-size:12px}.intro{top:21%}.hero-entry{top:37%}.hero-entry button{max-width:90%}.controls{gap:12px}.soundbar{gap:10px}.viewer-bottom nav{gap:10px}html[lang^="kaa"] .collection h2{font-size:12vw}}`;
   document.head.append(style);
-  const skipped='script,style,#site-language';
+  const skipped='script,style,#site-language,#sky-explorer';
   const originals=new WeakMap();
   function translate(value) {
     const row=entries.get(normalize(value));
@@ -199,3 +201,4 @@
   });
   apply();
 })();
+
