@@ -1,0 +1,12 @@
+/* Homepage-only mobile menu and non-emoji play icon. */
+.watch-sky-play{display:inline-block;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid currentColor;margin-right:9px;vertical-align:-1px}
+@media(max-width:650px){
+ body>header .site-nav{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:8px;width:100%;max-width:100%;min-width:0;overflow-x:auto;padding:0 2px;scrollbar-width:thin}
+ body>header .site-nav a{flex:0 0 auto;white-space:nowrap;font-size:13px;line-height:1.4;letter-spacing:0;min-height:44px;display:flex;align-items:center;padding:10px 0}
+ body>header .site-nav a[href="collection.html"]{font-size:0}
+ body>header .site-nav a[href="collection.html"]::after{content:"Collection";font-size:13px;line-height:1.4}
+ html[lang="nl"] body>header .site-nav a[href="collection.html"]::after{content:"Collectie"}
+ html[lang="kaa-Latn"] body>header .site-nav a[href="collection.html"]::after{content:"Toplam"}
+ html[lang="kaa-Cyrl"] body>header .site-nav a[href="collection.html"]::after{content:"Топлам"}
+}
+
