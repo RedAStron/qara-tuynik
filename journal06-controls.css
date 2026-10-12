@@ -7,6 +7,13 @@
 @media(max-width:650px){.film-actions{left:16px;right:16px;gap:8px}.film-actions .film-control{font-size:12px;padding:10px 12px}.film-caption{bottom:130px}}
 
 /* Captions and controls belong below the image, in one responsive strip. */
+.entry-series{color:#cda57e;font-size:12px;line-height:1.8;letter-spacing:.18em;text-transform:uppercase;margin:0 0 24px}
+.entry-footer{max-width:1120px;margin:0 auto;padding:36px clamp(20px,5vw,60px) 40px;color:#b7aea5;font-size:15px;line-height:1.8}
+.entry-publication{margin:0 0 36px;max-width:900px}
+.entry-bottom-nav{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+.entry-bottom-nav a{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:#e4b98b;text-decoration:underline;text-underline-offset:6px}
+.entry-signature{margin:64px 0 0;color:#a3988d;font-size:14px}
+@media(max-width:650px){.entry-series{font-size:10px;letter-spacing:.13em;max-width:310px;margin:0 auto 22px}.entry-footer{font-size:14px}.entry-signature{margin-top:48px}}
 .film{height:auto;min-height:0;max-height:none;overflow:visible;background:#090b11}
 .film:after{display:none}
 .film video{display:block;width:100%;height:clamp(320px,70svh,820px);object-fit:cover;background:#08090c}
