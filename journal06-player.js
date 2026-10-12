@@ -17,18 +17,20 @@
   let language='en';
   try{const saved=localStorage.getItem('qara-language');if(texts[saved])language=saved;}catch{}
   selector.value=language;
+  let soundEnabled=true;
   const films=[...document.querySelectorAll('[data-film]')].map(el=>{
     const video=el.querySelector('video'),play=el.querySelector('.film-control');
     const actions=document.createElement('div');actions.className='film-actions';
     const sound=document.createElement('button');sound.type='button';sound.className='film-control';
     const status=document.createElement('div');status.className='film-status';status.setAttribute('role','status');
-    actions.append(play,sound);el.append(actions,status);
+    const bar=document.createElement('div');bar.className='film-bar';
+    actions.append(play,sound);bar.append(el.querySelector('.film-caption'),actions);el.append(bar,status);
     video.muted=true;
     return {el,video,play,sound,status,userPaused:false,visible:false,started:false,explicitMute:false};
   });
   function update(f){
     const t=labels[language];
-    f.play.textContent=f.video.paused?(f.explicitMute?t[5]:t[0]):t[1];
+    f.play.textContent=f.video.paused?t[5]:t[1];
     f.play.setAttribute('aria-label',f.play.textContent);
     f.sound.textContent=f.video.muted?t[2]:t[3];
     f.sound.setAttribute('aria-label',f.sound.textContent);
@@ -41,17 +43,17 @@
   function pauseOthers(current){films.forEach(f=>{if(f!==current)f.video.pause();});}
   function start(f,audible){
     pauseOthers(f);f.status.replaceChildren();f.userPaused=false;
-    if(audible){f.video.muted=false;f.video.volume=1;f.explicitMute=false;}
+    soundEnabled=audible;f.video.muted=!audible;if(audible)f.video.volume=1;
     f.video.play().catch(()=>failure(f));update(f);
   }
   films.forEach(f=>{
     f.play.addEventListener('click',()=>{
-      if(f.video.paused)start(f,!f.explicitMute);
+      if(f.video.paused)start(f,soundEnabled);
       else{f.userPaused=true;f.video.pause();}
     });
     f.sound.addEventListener('click',()=>{
       if(f.video.muted)start(f,true);
-      else{f.video.muted=true;f.explicitMute=true;update(f);}
+      else{soundEnabled=false;films.forEach(other=>{other.video.muted=true;update(other);});}
     });
     ['play','pause','volumechange','ended'].forEach(type=>f.video.addEventListener(type,()=>update(f)));
     f.video.addEventListener('error',()=>failure(f));
@@ -75,9 +77,15 @@
       entries.forEach(e=>{
         const f=films.find(f=>f.el===e.target);f.visible=e.isIntersecting;
         if(!f.visible){f.video.pause();return;}
-        if(reduced||f.userPaused||f.started||document.hidden)return;
-        f.started=true;f.video.muted=true;pauseOthers(f);
-        f.video.play().catch(()=>update(f));
+        if(reduced||f.userPaused||document.hidden)return;
+        f.started=true;f.video.muted=!soundEnabled;pauseOthers(f);
+        f.video.play().catch(error=>{
+          if(!f.visible||document.hidden)return;
+          if(error.name==='NotAllowedError'&&!f.video.muted){
+            f.video.muted=true;
+            f.video.play().catch(()=>update(f));
+          }else update(f);
+        });
       });
     },{threshold:.55});
     films.forEach(f=>observer.observe(f.el));
