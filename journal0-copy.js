@@ -1,16 +1,4 @@
 window.JOURNAL_ZERO_COPY = {
-  "motion": [
-    "Scroll effects",
-    "Scrolleffecten",
-    "Aylantırıw effektleri",
-    "Айлантырыў еффектлери"
-  ],
-  "motionHelp": [
-    "Turn scroll effects on or off. Reduced-motion preferences are respected.",
-    "Schakel scrolleffecten in of uit. De voorkeur voor minder beweging wordt gerespecteerd.",
-    "Aylantırıw effektlerin qosıń yaki óshiriń. Háreketti azaytıw sazlaması esapqa alınadı.",
-    "Айлантырыў еффектлерин қосың яки өшириң. Ҳәрекетти азайтыў сазламасы есапқа алынады."
-  ],
   "title": [
     "Before the Beginning",
     "Vóór het begin",
