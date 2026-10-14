@@ -291,19 +291,19 @@ window.JOURNAL_ZERO_COPY = {
     "I / What we know",
     "I / Wat we weten",
     "I / Biz ne bilemiz",
-    "И / Биз не билемиз"
+    "I / Биз не билемиз"
   ],
   "tag2": [
     "II / What we are still asking",
     "II / Wat we ons nog afvragen",
     "II / Ele juwap izlep atırǵan sorawlarımız",
-    "ИИ / Еле жуўап излеп атырған сораўларымыз"
+    "II / Еле жуўап излеп атырған сораўларымыз"
   ],
   "tag3": [
     "III / Room for a question",
     "III / Ruimte voor een vraag",
     "III / Soraw ushın orın",
-    "ИИИ / Сораў ушын орын"
+    "III / Сораў ушын орын"
   ],
   "title": [
     "Before the Beginning",
