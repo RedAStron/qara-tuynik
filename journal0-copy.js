@@ -322,5 +322,17 @@ window.JOURNAL_ZERO_COPY = {
     "Hypothetische overgang",
     "Boljamlı ótiw",
     "Болжамлы өтиў"
+  ],
+  "postscript1": [
+    "You ask questions — there are no answers.",
+    "Je stelt vragen — er zijn geen antwoorden.",
+    "Sorawlar sala juwaplar joq",
+    "Сораулар сала жуаплар жок"
+  ],
+  "postscript2": [
+    "You find answers — there is no peace.",
+    "Je vindt antwoorden — er is geen rust.",
+    "Juwaplar ala tınıshlıq joq",
+    "Жуаплар ала тынышлык жок"
   ]
 };
