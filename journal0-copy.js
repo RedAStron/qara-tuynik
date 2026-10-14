@@ -1,33 +1,39 @@
 window.JOURNAL_ZERO_COPY = {
-  "title": [
-    "Before the Beginning",
-    "Vóór het begin",
-    "Baslanıwdan aldın",
-    "Басланыўдан алдын"
+  "a1": [
+    "We know that our universe was once extremely hot and dense.",
+    "We weten dat ons heelal ooit extreem heet en dicht was.",
+    "Biz álemimizdiń bir waqıtları júdá ıssı hám tıǵız bolǵanın bilemiz.",
+    "Биз әлемимиздиң бир ўақытлары жүдә ыссы ҳәм тығыз болғанын билемиз."
   ],
-  "label": [
-    "Journal · Entry 0 · A speculative cosmology essay",
-    "Dagboek · Artikel 0 · Een essay over speculatieve kosmologie",
-    "Kúndelik · Jazba 0 · Boljamlı kosmologiya haqqında esse",
-    "Күнделик · Жазба 0 · Болжамлы космология ҳаққында ессе"
+  "a2": [
+    "Around 13.8 billion years ago, it was expanding and cooling. Over time, matter formed, stars ignited, and galaxies emerged.",
+    "Ongeveer 13,8 miljard jaar geleden dijde het uit en koelde het af. Na verloop van tijd vormde zich materie, ontbrandden sterren en ontstonden sterrenstelsels.",
+    "Shama menen 13,8 milliard jıl burın ol keńeyip, suwıp baratır edi. Waqıt ótiwi menen materiya qáliplesti, juldızlar jandı hám galaktikalar payda boldı.",
+    "Шама менен 13,8 миллиард жыл бурын ол кеңейип, суўып баратыр еди. Ўақыт өтиўи менен материя қәлиплести, жулдызлар жанды ҳәм галактикалар пайда болды."
   ],
-  "category": [
-    "Cosmology / Beyond the event horizon",
-    "Kosmologie / Voorbij de waarnemingshorizon",
-    "Kosmologiya / Waqıyalar gorizontınan arǵı tárep",
-    "Космология / Ўақыялар горизонтынан арғы тәреп"
+  "a3": [
+    "But there is something we still don’t know.",
+    "Maar er is iets wat we nog steeds niet weten.",
+    "Biraq biz ele bilmeytuǵın bir nárse bar.",
+    "Бирақ биз еле билмейтуғын бир нәрсе бар."
   ],
-  "subtitle": [
-    "The black hole, the white hole, and the universe that came before.",
-    "Het zwarte gat, het witte gat en het heelal dat eraan voorafging.",
-    "Qara túynik, aq túynik hám onnan aldınǵı álem.",
-    "Қара түйник, ақ түйник ҳәм оннан алдынғы әлем."
+  "a4": [
+    "Was this the beginning of everything, or simply the earliest chapter we can reconstruct?",
+    "Was dit het begin van alles, of alleen het vroegste hoofdstuk dat we kunnen reconstrueren?",
+    "Bul hámme nárseniń baslanıwı ma edi, yaki tek biz qayta tikley alatuǵın eń dáslepki bap pa?",
+    "Бул ҳәмме нәрсениң басланыўы ма еди, яки тек биз қайта тиклей алатуғын ең дәслепки бап па?"
   ],
-  "art": [
-    "Conceptual visualization — not an observational representation of a white hole.",
-    "Conceptuele verbeelding — geen waarneming van een wit gat.",
-    "Konceptual súwret — aq túyniktiń baqlaw arqalı alınǵan kórinisi emes.",
-    "Концептуал сүўрет — ақ түйниктиң бақлаў арқалы алынған көриниси емес."
+  "a5": [
+    "The Big Bang describes the early evolution of our universe. It does not yet tell us with certainty why the universe exists, or whether anything preceded that early state.",
+    "De oerknal beschrijft de vroege ontwikkeling van ons heelal. Hij vertelt ons nog niet met zekerheid waarom het heelal bestaat, of dat er iets aan die vroege toestand voorafging.",
+    "Úlken partlaw álemimizdiń dáslepki rawajlanıwın sıpatlaydı. Ol álemniń ne ushın bar ekenin yaki sol dáslepki jaǵdaydan aldın bir nárse bolǵan-bolmaǵanın bizge ele anıq aytıp bermeydi.",
+    "Үлкен партлаў әлемимиздиң дәслепки раўажланыўын сыпатлайды. Ол әлемниң не ушын бар екенин яки сол дәслепки жағдайдан алдын бир нәрсе болған-болмағанын бизге еле анық айтып бермейди."
+  ],
+  "all": [
+    "All journal entries",
+    "Alle artikelen",
+    "Barlıq kúndelik jazbaları",
+    "Барлық күнделик жазбалары"
   ],
   "alt": [
     "An imagined golden horizon inside a dark cosmic chamber, opening into fractured blue and white edges.",
@@ -35,95 +41,155 @@ window.JOURNAL_ZERO_COPY = {
     "Qarańǵı kosmos keńisligindegi altın reńli qıyalıy gorizont, kók hám aq shetlerge ashıladı.",
     "Қараңғы космос кеңислигиндеги алтын реңли қыялый горизонт, көк ҳәм ақ шетлерге ашылады."
   ],
+  "art": [
+    "Conceptual visualization — not an observational representation of a white hole.",
+    "Conceptuele verbeelding — geen waarneming van een wit gat.",
+    "Konceptual súwret — aq túyniktiń baqlaw arqalı alınǵan kórinisi emes.",
+    "Концептуал сүўрет — ақ түйниктиң бақлаў арқалы алынған көриниси емес."
+  ],
+  "b1": [
+    "And this is where black holes become interesting.",
+    "En hier worden zwarte gaten interessant.",
+    "Mine, usı jerde qara túynikler qızıǵıwshılıq oyatadı.",
+    "Мине, усы жерде қара түйниклер қызығыўшылық оятады."
+  ],
+  "b2": [
+    "A black hole is a region of spacetime from which light cannot escape. According to classical general relativity, continued collapse can lead toward a singularity, where the mathematical description reaches its limits.",
+    "Een zwart gat is een gebied in de ruimtetijd waaruit licht niet kan ontsnappen. Volgens de klassieke algemene relativiteitstheorie kan aanhoudende instorting leiden tot een singulariteit, waar de wiskundige beschrijving haar grenzen bereikt.",
+    "Qara túynik — jaqtılıq shıǵıp kete almaytuǵın keńislik-waqıt aymaǵı. Klassikalıq ulıwma salıstırmalılıq teoriyasına kóre, dawamlı qısılıw singulyarlıqqa alıp keliwi múmkin. Bul jerde matematikalıq sıpatlama óz shegarasına jetedi.",
+    "Қара түйник — жақтылық шығып кете алмайтуғын кеңислик-ўақыт аймағы. Классикалық улыўма салыстырмалылық теориясына көре, даўамлы қысылыў сингулярлыққа алып келиўи мүмкин. Бул жерде математикалық сыпатлама өз шегарасына жетеди."
+  ],
+  "b3": [
+    "We don’t know what actually happens under those extreme conditions. A complete theory of quantum gravity may be needed to understand them.",
+    "We weten niet wat er onder zulke extreme omstandigheden werkelijk gebeurt. Om dat te begrijpen is mogelijk een volledige theorie van kwantumzwaartekracht nodig.",
+    "Usınday shekten tıs jaǵdaylarda haqıyqatında ne bolatuǵının bilmeymiz. Olardı túsiniw ushın kvant gravitaciyasınıń tolıq teoriyası kerek bolıwı múmkin.",
+    "Усындай шектен тыс жағдайларда ҳақыйқатында не болатуғынын билмеймиз. Оларды түсиниў ушын квант гравитациясының толық теориясы керек болыўы мүмкин."
+  ],
+  "b4": [
+    "Some physicists have explored whether gravitational collapse could undergo a quantum transition rather than ending at a singularity.",
+    "Sommige natuurkundigen onderzoeken of zwaartekrachtinstorting een kwantumovergang kan doormaken in plaats van bij een singulariteit te eindigen.",
+    "Ayırım fizikler gravitaciyalıq qısılıw singulyarlıqta tamamlanıwdıń ornına kvant ótiwinen ótiwi múmkin be degen sorawdı izertlegen.",
+    "Айырым физиклер гравитациялық қысылыў сингулярлықта тамамланыўдың орнына квант өтиўинен өтиўи мүмкин бе деген сораўды изертлеген."
+  ],
+  "b5": [
+    "Others have investigated the possibility of a universe that existed in a contracting state before expanding in a cosmic bounce.",
+    "Anderen onderzoeken de mogelijkheid van een heelal dat eerst kromp en daarna door een kosmische terugvering begon uit te dijen.",
+    "Basqaları kosmoslıq qayta serpiliw arqalı keńeyiwden aldın qısılıw jaǵdayında bolǵan álem múmkinshiligin izertlegen.",
+    "Басқалары космослық қайта серпилиў арқалы кеңейиўден алдын қысылыў жағдайында болған әлем мүмкиншилигин изертлеген."
+  ],
+  "b6": [
+    "There are also theoretical models involving white holes—hypothetical regions of spacetime from which matter and light can emerge but cannot enter.",
+    "Er zijn ook theoretische modellen met witte gaten: hypothetische gebieden in de ruimtetijd waaruit materie en licht kunnen komen, maar die ze niet kunnen binnengaan.",
+    "Aq túyniklerdi qamtıytuǵın teoriyalıq modeller de bar. Bular — materiya hám jaqtılıq shıǵa alatuǵın, biraq ishine kire almaytuǵın keńislik-waqıttıń boljamlı aymaqları.",
+    "Ақ түйниклерди қамтыйтуғын теориялық моделлер де бар. Булар — материя ҳәм жақтылық шыға алатуғын, бирақ ишине кире алмайтуғын кеңислик-ўақыттың болжамлы аймақлары."
+  ],
+  "b7": [
+    "Could any of these ideas be connected?",
+    "Zouden deze ideeën met elkaar samenhangen?",
+    "Bul ideyalardıń arasında baylanıs bolıwı múmkin be?",
+    "Бул идеялардың арасында байланыс болыўы мүмкин бе?"
+  ],
+  "b8": [
+    "Possibly. But we have no observational evidence that black holes produce white holes, or that our universe was born inside a black hole.",
+    "Misschien. Maar er is geen waarnemingsbewijs dat zwarte gaten witte gaten voortbrengen, of dat ons heelal binnen een zwart gat is geboren.",
+    "Múmkin. Biraq qara túynikler aq túyniklerdi payda etetuǵının yaki álemimiz qara túyniktiń ishinde tuwılǵanın kórsetetuǵın baqlaw dálilleri joq.",
+    "Мүмкин. Бирақ қара түйниклер ақ түйниклерди пайда ететуғынын яки әлемимиз қара түйниктиң ишинде туўылғанын көрсететуғын бақлаў дәлиллери жоқ."
+  ],
+  "b9": [
+    "These remain speculative proposals, not established cosmology.",
+    "Dit blijven speculatieve voorstellen, geen gevestigde kosmologie.",
+    "Bular tastıyıqlanǵan kosmologiya emes, ele boljamlı usınıslar bolıp qalmaqta.",
+    "Булар тастыйықланған космология емес, еле болжамлы усыныслар болып қалмақта."
+  ],
   "begin": [
     "Enter the question",
     "Stap de vraag binnen",
     "Sorawǵa názer salıń",
     "Сораўға нәзер салың"
   ],
-  "question": [
-    "What if the end of everything is the beginning of something else?",
-    "Wat als het einde van alles het begin van iets anders is?",
-    "Eger hámme nárseniń aqırı basqa bir nárseniń baslanıwı bolsa she?",
-    "Егер ҳәмме нәрсениң ақыры басқа бир нәрсениң басланыўы болса ше?"
+  "c1": [
+    "Yet they challenge a familiar assumption: that the earliest chapter we can describe must also be the first chapter of reality.",
+    "Toch dagen ze een vertrouwde aanname uit: dat het vroegste hoofdstuk dat we kunnen beschrijven ook het eerste hoofdstuk van de werkelijkheid moet zijn.",
+    "Sonda da olar bizge tanıs bir boljamǵa gúman tuwdıradı: biz sıpatlay alatuǵın eń dáslepki bap bolmıstıń da birinshi babı bolıwı shárt pe?",
+    "Сонда да олар бизге таныс бир болжамға гүман туўдырады: биз сыпатлай алатуғын ең дәслепки бап болмыстың да биринши бабы болыўы шәрт пе?"
   ],
-  "intro1": [
-    "We have learned to imagine the Big Bang as the beginning of our universe. But a beginning raises a peculiar question. What, if anything, existed before the beginning?",
-    "We hebben geleerd de oerknal te zien als het begin van ons heelal. Maar een begin roept een merkwaardige vraag op. Wat bestond er, als er al iets bestond, vóór dat begin?",
-    "Biz Úlken partlawdı álemimizdiń baslanıwı dep kóz aldımızǵa keltiriwge úyrendik. Biraq baslanıw ózgeshe bir soraw tuwdıradı. Baslanıwdan aldın bir nárse bar boldı ma?",
-    "Биз Үлкен партлаўды әлемимиздиң басланыўы деп көз алдымызға келтириўге үйрендик. Бирақ басланыў өзгеше бир сораў туўдырады. Басланыўдан алдын бир нәрсе бар болды ма?"
+  "c2": [
+    "Perhaps the early universe was preceded by another physical state.",
+    "Misschien ging aan het vroege heelal een andere fysieke toestand vooraf.",
+    "Bálkim, dáslepki álemnen aldın basqa bir fizikalıq jaǵday bolǵandır.",
+    "Бәлким, дәслепки әлемнен алдын басқа бир физикалық жағдай болғандыр."
   ],
-  "intro2": [
-    "Perhaps the question itself is misleading. Perhaps time began with the universe, leaving no earlier moment to discover. Or perhaps what we call the beginning was only a transition. A boundary between two states of existence.",
-    "Misschien is de vraag zelf misleidend. Misschien begon de tijd met het heelal en bestaat er geen eerder moment om te ontdekken. Of misschien was wat wij het begin noemen slechts een overgang. Een grens tussen twee toestanden van bestaan.",
-    "Bálkim, sorawdıń ózi nadurıs qoyılǵandır. Bálkim, waqıt álem menen birge baslanǵan, sonlıqtan onnan aldınǵı sátti izlewdiń mánisi joqtır. Yaki biz baslanıw dep ataǵan nárse tek bir ótiw bolǵandır. Bar bolıwdıń eki jaǵdayı arasındaǵı shegara.",
-    "Бәлким, сораўдың өзи надурыс қойылғандыр. Бәлким, ўақыт әлем менен бирге басланған, сонлықтан оннан алдынғы сәтти излеўдиң мәниси жоқтыр. Яки биз басланыў деп атаған нәрсе тек бир өтиў болғандыр. Бар болыўдың еки жағдайы арасындағы шегара."
+  "c3": [
+    "Perhaps time itself emerged along with the universe.",
+    "Misschien ontstond de tijd zelf samen met het heelal.",
+    "Bálkim, waqıttıń ózi álem menen birge payda bolǵandır.",
+    "Бәлким, ўақыттың өзи әлем менен бирге пайда болғандыр."
+  ],
+  "c4": [
+    "Or perhaps the question of what happened before has no physical meaning.",
+    "Of misschien heeft de vraag wat er daarvoor gebeurde geen fysieke betekenis.",
+    "Yaki aldın ne bolǵanı haqqındaǵı sorawdıń fizikalıq mánisi joqtır.",
+    "Яки алдын не болғаны ҳаққындағы сораўдың физикалық мәниси жоқтыр."
+  ],
+  "c5": [
+    "We do not yet know.",
+    "We weten het nog niet.",
+    "Biz ele bilmeymiz.",
+    "Биз еле билмеймиз."
+  ],
+  "c6": [
+    "And that uncertainty is precisely what makes the question worth asking.",
+    "En juist die onzekerheid maakt de vraag het stellen waard.",
+    "Usı belgisizliktiń ózi bul sorawdı beriwge turarlı etedi.",
+    "Усы белгисизликтиң өзи бул сораўды бериўге турарлы етеди."
+  ],
+  "collapse": [
+    "Collapse",
+    "Instorting",
+    "Qısılıw",
+    "Қысылыў"
+  ],
+  "credit": [
+    "QARA TUYNIK — Exploring the boundary between what we know and what we can imagine.",
+    "QARA TUYNIK — Op de grens tussen wat we weten en wat we ons kunnen voorstellen.",
+    "QARA TUYNIK — Bilgenimiz benen qıyal ete alatuǵınımız arasındaǵı shegaranı izertlew.",
+    "QARA TUYNIK — Билгенимиз бенен қыял ете алатуғынымыз арасындағы шегараны изертлеў."
+  ],
+  "disclaimer": [
+    "Artistic analogy, not a simulation. The slider does not represent measured time, a proven transition, or a route through a black hole.",
+    "Artistieke analogie, geen simulatie. De schuifregelaar toont geen gemeten tijd, bewezen overgang of route door een zwart gat.",
+    "Bul — kórkem uqsatıw, fizikalıq simulyaciya emes. Jıljıtqısh ólshengen waqıttı, dálillengen ótiwdi yaki qara túynik arqalı joldı kórsetpeydi.",
+    "Бул — көркем уқсатыў, физикалық симуляция емес. Жылжытқыш өлшенген ўақытты, дәлилленген өтиўди яки қара түйник арқалы жолды көрсетпейди."
+  ],
+  "emergence": [
+    "Emergence",
+    "Ontstaan",
+    "Payda bolıw",
+    "Пайда болыў"
   ],
   "h1": [
-    "At the limit of spacetime",
-    "Aan de grens van ruimtetijd",
-    "Keńislik-waqıt shegarasında",
-    "Кеңислик-ўақыт шегарасында"
-  ],
-  "tag1": [
-    "I / Established physics · an unresolved interior",
-    "I / Gevestigde natuurkunde · een onbegrepen binnenste",
-    "I / Tastıyıqlanǵan fizika · ishki dúnyası ele belgisiz",
-    "И / Тастыйықланған физика · ишки дүнясы еле белгисиз"
-  ],
-  "p11": [
-    "Far beyond the familiar architecture of stars and galaxies, gravity creates something extraordinary: a black hole. Inside its event horizon, spacetime is curved so strongly that no outward signal, not even light, can reach the distant universe.",
-    "Ver voorbij de vertrouwde wereld van sterren en sterrenstelsels vormt zwaartekracht iets buitengewoons: een zwart gat. Binnen de waarnemingshorizon is de ruimtetijd zo sterk gekromd dat geen enkel uitgaand signaal, zelfs geen licht, het verre heelal kan bereiken.",
-    "Juldızlar hám galaktikalardıń bizge tanıs dúnyasınan arıda tartılıs kúshi tańǵalarlıq nárse — qara túynikti payda etedi. Onıń waqıyalar gorizontı ishinde keńislik-waqıt sonsha kúshli iyiledi, hátte jaqtılıq ta sırtqı álemge jetip bara almaydı.",
-    "Жулдызлар ҳәм галактикалардың бизге таныс дүнясынан арыда тартылыс күши таңғаларлық нәрсе — қара түйникти пайда етеди. Оның ўақыялар горизонты ишинде кеңислик-ўақыт сонша күшли ийиледи, ҳәтте жақтылық та сыртқы әлемге жетип бара алмайды."
-  ],
-  "p12": [
-    "From the outside, it appears to be a destination without return. Matter falls inward. Light vanishes. The fate of information becomes an unresolved question when quantum physics enters the story. But what happens deep inside?",
-    "Van buitenaf lijkt het een bestemming zonder terugkeer. Materie valt naar binnen. Licht verdwijnt. Het lot van informatie wordt een onopgeloste vraag zodra de kwantumfysica in beeld komt. Maar wat gebeurt er diep vanbinnen?",
-    "Sırttan qaraǵanda, ol qaytıw jolı joq bir orın sıyaqlı. Materiya ishke qulaydı. Jaqtılıq joǵaladı. Kvant fizikası esapqa alınǵanda, informaciyanıń taǵdiri sheshilmegen sorawǵa aylanadı. Al tereń ishinde ne boladı?",
-    "Сырттан қарағанда, ол қайтыў жолы жоқ бир орын сыяқлы. Материя ишке қулайды. Жақтылық жоғалады. Квант физикасы есапқа алынғанда, информацияның тағдири шешилмеген сораўға айланады. Ал терең ишинде не болады?"
-  ],
-  "p13": [
-    "Classical general relativity leads toward a singularity: a limit at which our present description of spacetime breaks down. This is not a measured point of infinite density. It is a warning that the theory is incomplete in these extreme conditions.",
-    "De klassieke algemene relativiteitstheorie leidt naar een singulariteit: een grens waar onze huidige beschrijving van ruimtetijd tekortschiet. Dit is geen gemeten punt met oneindige dichtheid. Het is een waarschuwing dat de theorie onder deze extreme omstandigheden onvolledig is.",
-    "Klassikalıq ulıwma salıstırmalılıq teoriyası singulyarlıqqa alıp keledi: bul — keńislik-waqıt haqqındaǵı házirgi túsinigimiz islewden qalatuǵın shegara. Ol sheksiz tıǵızlıǵı ólshengen noqat emes. Ol usınday shekten tıs jaǵdaylarda teoriyanıń tolıq emesligin kórsetedi.",
-    "Классикалық улыўма салыстырмалылық теориясы сингулярлыққа алып келеди: бул — кеңислик-ўақыт ҳаққындағы ҳәзирги түсинигимиз ислеўден қалатуғын шегара. Ол шексиз тығызлығы өлшенген ноқат емес. Ол усындай шектен тыс жағдайларда теорияның толық емеслигин көрсетеди."
-  ],
-  "q1": [
-    "Perhaps the singularity is not the answer. Perhaps it is the limit of the question.",
-    "Misschien is de singulariteit niet het antwoord. Misschien is zij de grens van de vraag.",
-    "Bálkim, singulyarlıq juwap emestir. Bálkim, ol sorawdıń shegarasıdır.",
-    "Бәлким, сингулярлық жуўап еместир. Бәлким, ол сораўдың шегарасыдыр."
+    "The earliest chapter",
+    "Het vroegste hoofdstuk",
+    "Eń dáslepki bap",
+    "Ең дәслепки бап"
   ],
   "h2": [
-    "The other side of darkness",
-    "De andere kant van de duisternis",
-    "Qarańǵılıqtıń arǵı tárepi",
-    "Қараңғылықтың арғы тәрепи"
+    "The other side",
+    "De andere kant",
+    "Arǵı tárep",
+    "Арғы тәреп"
   ],
-  "tag2": [
-    "II / A hypothetical reversal",
-    "II / Een hypothetische omkering",
-    "II / Boljamlı keri process",
-    "ИИ / Болжамлы кери процесс"
+  "h3": [
+    "What if?",
+    "Wat als?",
+    "Eger solay bolsa she?",
+    "Егер солай болса ше?"
   ],
-  "p21": [
-    "Imagine reversing the story. A black-hole horizon permits entry but not escape. A hypothetical white hole would do the opposite: matter and radiation could emerge, but nothing could enter from outside. White holes appear in certain mathematical solutions of general relativity. No white hole has been confirmed to exist.",
-    "Stel je voor dat het verhaal omkeert. De horizon van een zwart gat laat wel iets binnen, maar niets ontsnappen. Een hypothetisch wit gat zou het omgekeerde doen: materie en straling kunnen naar buiten komen, maar niets kan van buitenaf binnendringen. Witte gaten komen voor in bepaalde wiskundige oplossingen van de algemene relativiteitstheorie. Hun bestaan is niet bevestigd.",
-    "Waqıyanı keri baǵıtta kóz aldımızǵa keltireyik. Qara túynik gorizontı ishke kiriwge jol beredi, biraq shıǵıwǵa jol bermeydi. Boljamlı aq túynikte kerisinshe bolar edi: materiya hám nurlanıw sırtqa shıǵadı, biraq sırttan hesh nárse ishke kire almaydı. Aq túynikler ulıwma salıstırmalılıq teoriyasınıń ayırım matematikalıq sheshimlerinde ushırasadı. Hesh bir aq túyniktiń bar ekenligi tastıyıqlanbaǵan.",
-    "Ўақыяны кери бағытта көз алдымызға келтирейик. Қара түйник горизонты ишке кириўге жол береди, бирақ шығыўға жол бермейди. Болжамлы ақ түйникте керисинше болар еди: материя ҳәм нурланыў сыртқа шығады, бирақ сырттан ҳеш нәрсе ишке кире алмайды. Ақ түйниклер улыўма салыстырмалылық теориясының айырым математикалық шешимлеринде ушырасады. Ҳеш бир ақ түйниктиң бар екенлиги тастыйықланбаған."
-  ],
-  "p22": [
-    "Some speculative approaches to quantum gravity ask whether a black hole could eventually undergo a transition into a white-hole-like state. Not necessarily a tunnel through ordinary space. Not a gateway that a traveller could safely cross. A transformation in the geometry of spacetime itself.",
-    "Sommige speculatieve benaderingen van kwantumzwaartekracht onderzoeken of een zwart gat uiteindelijk kan overgaan in een toestand die op een wit gat lijkt. Niet noodzakelijk een tunnel door de gewone ruimte. Geen poort die een reiziger veilig kan passeren. Een verandering in de geometrie van de ruimtetijd zelf.",
-    "Kvant gravitaciyasınıń ayırım boljamlı baǵıtları qara túynik aqırında aq túynikke uqsas jaǵdayǵa ótiwi múmkin be degen sorawdı izertleydi. Bul ádettegi keńislik arqalı ótiwshi tunnel bolıwı shárt emes. Sayaxatshı qáwipsiz óte alatuǵın qaqpa da emes. Bul — keńislik-waqıt geometriyasınıń ózgeriwi.",
-    "Квант гравитациясының айырым болжамлы бағытлары қара түйник ақырында ақ түйникке уқсас жағдайға өтиўи мүмкин бе деген сораўды изертлейди. Бул әдеттеги кеңислик арқалы өтиўши туннел болыўы шәрт емес. Саяхатшы қәўипсиз өте алатуғын қақпа да емес. Бул — кеңислик-ўақыт геометриясының өзгериўи."
-  ],
-  "q2": [
-    "A collapse becoming an expansion. An ending becoming a beginning.",
-    "Een instorting die uitzetting wordt. Een einde dat een begin wordt.",
-    "Qısılıwdıń keńeyiwge aylanıwı. Aqırdıń baslanıwǵa aylanıwı.",
-    "Қысылыўдың кеңейиўге айланыўы. Ақырдың басланыўға айланыўы."
+  "hint": [
+    "Drag the horizon from collapse to emergence. Use the arrow keys for small steps.",
+    "Sleep de horizon van instorting naar ontstaan. Gebruik de pijltjestoetsen voor kleine stappen.",
+    "Gorizonttı qısılıwdan payda bolıwǵa qaray jıljıtıń. Kishi qádemler ushın baǵdar túymelerin basıń.",
+    "Горизонтты қысылыўдан пайда болыўға қарай жылжытың. Киши қәдемлер ушын бағдар түймелерин басың."
   ],
   "horizon": [
     "The Horizon",
@@ -137,167 +203,47 @@ window.JOURNAL_ZERO_COPY = {
     "Ózińiz ózgertip kóre alatuǵın ideya",
     "Өзиңиз өзгертип көре алатуғын идея"
   ],
-  "hint": [
-    "Drag the horizon from collapse to emergence. Use the arrow keys for small steps.",
-    "Sleep de horizon van instorting naar ontstaan. Gebruik de pijltjestoetsen voor kleine stappen.",
-    "Gorizonttı qısılıwdan payda bolıwǵa qaray jıljıtıń. Kishi qádemler ushın baǵdar túymelerin basıń.",
-    "Горизонтты қысылыўдан пайда болыўға қарай жылжытың. Киши қәдемлер ушын бағдар түймелерин басың."
+  "label": [
+    "Journal · Entry 0 · Before the Beginning",
+    "Dagboek · Artikel 0 · Vóór het begin",
+    "Kúndelik · Jazba 0 · Baslanıwdan aldın",
+    "Күнделик · Жазба 0 · Басланыўдан алдын"
   ],
-  "collapse": [
-    "Collapse",
-    "Instorting",
-    "Qısılıw",
-    "Қысылыў"
+  "language": [
+    "Language",
+    "Taal",
+    "Til",
+    "Тил"
   ],
-  "transition": [
-    "Hypothetical transition",
-    "Hypothetische overgang",
-    "Boljamlı ótiw",
-    "Болжамлы өтиў"
+  "last1": [
+    "Perhaps outside is not a place.",
+    "Misschien is buiten geen plaats.",
+    "Bálkim, sırt degenimiz orın emestir.",
+    "Бәлким, сырт дегенимиз орын еместир."
   ],
-  "emergence": [
-    "Emergence",
-    "Ontstaan",
-    "Payda bolıw",
-    "Пайда болыў"
+  "last2": [
+    "Perhaps before is not a time.",
+    "Misschien is vóór geen tijd.",
+    "Bálkim, aldın degenimiz waqıt emestir.",
+    "Бәлким, алдын дегенимиз ўақыт еместир."
   ],
-  "disclaimer": [
-    "Artistic analogy, not a simulation. The slider does not represent measured time, a proven transition, or a route through a black hole.",
-    "Artistieke analogie, geen simulatie. De schuifregelaar toont geen gemeten tijd, bewezen overgang of route door een zwart gat.",
-    "Bul — kórkem uqsatıw, fizikalıq simulyaciya emes. Jıljıtqısh ólshengen waqıttı, dálillengen ótiwdi yaki qara túynik arqalı joldı kórsetpeydi.",
-    "Бул — көркем уқсатыў, физикалық симуляция емес. Жылжытқыш өлшенген ўақытты, дәлилленген өтиўди яки қара түйник арқалы жолды көрсетпейди."
+  "last3": [
+    "And perhaps the deepest mystery is not what existed before the universe, but whether the concept of before can exist without time itself.",
+    "En misschien is het diepste mysterie niet wat er vóór het heelal bestond, maar of het begrip vóór kan bestaan zonder de tijd zelf.",
+    "Bálkim, eń tereń sır álemnen aldın ne bolǵanında emes, al waqıttıń ózisiz «aldın» degen túsiniktiń bar bolıwı múmkinligindedir.",
+    "Бәлким, ең терең сыр әлемнен алдын не болғанында емес, ал ўақыттың өзисиз «алдын» деген түсиниктиң бар болыўы мүмкинлигиндедир."
+  ],
+  "nav": [
+    "Journal navigation",
+    "Dagboeknavigatie",
+    "Kúndelik navigaciyası",
+    "Күнделик навигациясы"
   ],
   "reset": [
     "Reset",
     "Herstellen",
     "Basına qaytarıw",
     "Басына қайтарыў"
-  ],
-  "h3": [
-    "The universe before our universe",
-    "Het heelal vóór ons heelal",
-    "Álemimizden aldınǵı álem",
-    "Әлемимизден алдынғы әлем"
-  ],
-  "tag3": [
-    "III / Different models · unanswered questions",
-    "III / Verschillende modellen · onbeantwoorde vragen",
-    "III / Túrli modeller · juwapsız sorawlar",
-    "ИИИ / Түрли моделлер · жуўапсыз сораўлар"
-  ],
-  "p31": [
-    "Now imagine an even more radical possibility. What if the hot Big Bang was not the absolute creation of everything, but the expansion of a universe emerging from an earlier physical state?",
-    "Stel je nu een nog radicalere mogelijkheid voor. Wat als de hete oerknal niet het absolute ontstaan van alles was, maar de uitzetting van een heelal dat voortkwam uit een eerdere fysieke toestand?",
-    "Endi jáne de batıl bir múmkinshilikti kóz aldımızǵa keltireyik. Eger ıssı Úlken partlaw hámme nárseniń pútkilley joqtan payda bolıwı emes, al aldınǵı fizikalıq jaǵdaydan shıqqan álemniń keńeyiwi bolsa she?",
-    "Енди және де батыл бир мүмкиншиликти көз алдымызға келтирейик. Егер ыссы Үлкен партлаў ҳәмме нәрсениң пүткиллей жоқтан пайда болыўы емес, ал алдынғы физикалық жағдайдан шыққан әлемниң кеңейиўи болса ше?"
-  ],
-  "p32": [
-    "Some cosmological models investigate a bounce: a preceding contracting phase gives way to expansion. Other speculative models ask whether black-hole interiors could produce new expanding regions of spacetime. These are different proposals, not pieces of one established explanation of our universe.",
-    "Sommige kosmologische modellen onderzoeken een terugvering: een eerdere fase van inkrimping gaat over in uitzetting. Andere speculatieve modellen vragen of binnenin zwarte gaten nieuwe, uitdijende gebieden van ruimtetijd kunnen ontstaan. Dit zijn verschillende voorstellen, geen onderdelen van één bewezen verklaring van ons heelal.",
-    "Ayırım kosmologiyalıq modeller qayta serpiliwdi izertleydi: aldınǵı qısılıw dáwiri keńeyiwge ótedi. Basqa boljamlı modeller qara túyniktiń ishinde keńislik-waqıttıń jańa keńeyiwshi aymaqları payda bolıwı múmkin be dep soraydı. Bular bir tastıyıqlanǵan túsindirmeniń bólekleri emes, hár túrli usınıslar.",
-    "Айырым космологиялық моделлер қайта серпилиўди изертлейди: алдынғы қысылыў дәўири кеңейиўге өтеди. Басқа болжамлы моделлер қара түйниктиң ишинде кеңислик-ўақыттың жаңа кеңейиўши аймақлары пайда болыўы мүмкин бе деп сорайды. Булар бир тастыйықланған түсиндирмениң бөлеклери емес, ҳәр түрли усыныслар."
-  ],
-  "q3": [
-    "Could what appears as a black hole from one perspective correspond to the birth of a universe from another?",
-    "Kan wat vanuit het ene perspectief een zwart gat lijkt, vanuit een ander perspectief de geboorte van een heelal zijn?",
-    "Bir kózqarastan qara túynik bolıp kóringen nárse basqa kózqarastan álemniń tuwılıwına sáykes keliwi múmkin be?",
-    "Бир көзқарастан қара түйник болып көринген нәрсе басқа көзқарастан әлемниң туўылыўына сәйкес келиўи мүмкин бе?"
-  ],
-  "p33": [
-    "In such a story, an entire cosmos could emerge without an observer inside being able to see the world from which it originated. Its galaxies would form. Its stars would ignite. Its planets would cool. And eventually, beneath one of those stars, a conscious observer might look into the darkness and ask: where did all of this come from?",
-    "In zo’n verhaal zou een hele kosmos kunnen ontstaan zonder dat een waarnemer daarbinnen de wereld van oorsprong kan zien. Sterrenstelsels zouden zich vormen. Sterren zouden ontbranden. Planeten zouden afkoelen. En uiteindelijk zou onder een van die sterren een bewuste waarnemer de duisternis in kijken en vragen: waar komt dit alles vandaan?",
-    "Usınday waqıyada ishindegi baqlawshı ózi payda bolǵan dúnyanı kóre almaytuǵın pútkil bir kosmos tuwılıwı múmkin. Galaktikalar qálipleser edi. Juldızlar janar edi. Planetalar suwır edi. Aqırında sol juldızlardıń biriniń astında sanalı baqlawshı qarańǵılıqqa qarap: bulardıń hámmesi qaydan payda boldı, dep sorar edi.",
-    "Усындай ўақыяда ишиндеги бақлаўшы өзи пайда болған дүняны көре алмайтуғын пүткил бир космос туўылыўы мүмкин. Галактикалар қәлиплесер еди. Жулдызлар жанар еди. Планеталар суўыр еди. Ақырында сол жулдызлардың бириниң астында саналы бақлаўшы қараңғылыққа қарап: булардың ҳәммеси қайдан пайда болды, деп сорар еди."
-  ],
-  "h4": [
-    "The unseen foundation",
-    "Het onzichtbare fundament",
-    "Kórinbes tiykar",
-    "Көринбес тийкар"
-  ],
-  "tag4": [
-    "IV / A philosophical question",
-    "IV / Een filosofische vraag",
-    "IV / Filosofiyalıq soraw",
-    "ИВ / Философиялық сораў"
-  ],
-  "p41": [
-    "Perhaps reality does not require a first moment in the way our minds imagine one. Perhaps beginnings and endings are local events within a deeper physical structure. A universe expands. Stars form. Black holes emerge. And perhaps, under conditions we do not yet understand, entirely new regions of spacetime become possible.",
-    "Misschien heeft de werkelijkheid geen eerste moment nodig zoals wij ons dat voorstellen. Misschien zijn begin en einde plaatselijke gebeurtenissen binnen een diepere fysieke structuur. Een heelal dijt uit. Sterren ontstaan. Zwarte gaten vormen zich. En misschien worden, onder omstandigheden die we nog niet begrijpen, geheel nieuwe gebieden van ruimtetijd mogelijk.",
-    "Bálkim, bolmıs biz oylaytuǵınday birinshi sátti talap etpeytuǵındır. Bálkim, baslanıw hám aqır tereńirek fizikalıq dúzilistegi jergilikli waqıyalar bolar. Álem keńeyedi. Juldızlar qáliplesedi. Qara túynikler payda boladı. Bálkim, biz ele túsinbeytuǵın jaǵdaylarda keńislik-waqıttıń pútkilley jańa aymaqları múmkin bolar.",
-    "Бәлким, болмыс биз ойлайтуғындай биринши сәтти талап етпейтуғындыр. Бәлким, басланыў ҳәм ақыр тереңирек физикалық дүзилистеги жергиликли ўақыялар болар. Әлем кеңейеди. Жулдызлар қәлиплеседи. Қара түйниклер пайда болады. Бәлким, биз еле түсинбейтуғын жағдайларда кеңислик-ўақыттың пүткиллей жаңа аймақлары мүмкин болар."
-  ],
-  "p42": [
-    "But if our universe emerged from a previous state, what supported that state? And the one before it? Are we following an infinite sequence, or searching for a foundation that does not itself exist within time? These are philosophical questions, not conclusions supplied by the models.",
-    "Maar als ons heelal uit een eerdere toestand ontstond, wat droeg die toestand dan? En de toestand dáárvoor? Volgen we een oneindige reeks, of zoeken we een fundament dat zelf niet binnen de tijd bestaat? Dit zijn filosofische vragen, geen conclusies die de modellen ons geven.",
-    "Biraq álemimiz aldınǵı jaǵdaydan payda bolǵan bolsa, sol jaǵdaydıń tiykarı ne edi? Al onnan aldınǵısınıń she? Biz sheksiz izbe-izlikti baqlap baratırmız ba, yaki ózi waqıt ishinde bolmaytuǵın tiykardı izlep atırmız ba? Bular modellerden alınǵan juwmaqlar emes, filosofiyalıq sorawlar.",
-    "Бирақ әлемимиз алдынғы жағдайдан пайда болған болса, сол жағдайдың тийкары не еди? Ал оннан алдынғысының ше? Биз шексиз избе-изликти бақлап баратырмыз ба, яки өзи ўақыт ишинде болмайтуғын тийкарды излеп атырмыз ба? Булар моделлерден алынған жуўмақлар емес, философиялық сораўлар."
-  ],
-  "q4": [
-    "Perhaps outside is not a place. Perhaps before is not a time.",
-    "Misschien is buiten geen plaats. Misschien is vóór geen tijd.",
-    "Bálkim, sırt degenimiz orın emestir. Bálkim, aldın degenimiz waqıt emestir.",
-    "Бәлким, сырт дегенимиз орын еместир. Бәлким, алдын дегенимиз ўақыт еместир."
-  ],
-  "p43": [
-    "Perhaps the deeper reality cannot be described using coordinates that exist only within our universe.",
-    "Misschien kunnen we een diepere werkelijkheid niet beschrijven met coördinaten die alleen binnen ons heelal bestaan.",
-    "Bálkim, tereńirek bolmıstı tek álemimiz ishinde bar bolǵan koordinatalar menen sıpatlap bolmastır.",
-    "Бәлким, тереңирек болмысты тек әлемимиз ишинде бар болған координаталар менен сыпатлап болмастыр."
-  ],
-  "h5": [
-    "The horizon of knowing",
-    "De horizon van ons weten",
-    "Biliw gorizontı",
-    "Билиў горизонты"
-  ],
-  "tag5": [
-    "V / At the edge of what we know",
-    "V / Aan de rand van wat we weten",
-    "V / Bilimimizdiń shegarasında",
-    "В / Билимимиздиң шегарасында"
-  ],
-  "p51": [
-    "We stand inside the universe, attempting to understand the universe. Every telescope looks outward. Every equation reaches further. Yet observations have not established which, if any, of these proposed earlier states describes the origin of our universe.",
-    "We staan ín het heelal en proberen het heelal te begrijpen. Elke telescoop kijkt naar buiten. Elke vergelijking reikt verder. Toch hebben waarnemingen niet vastgesteld welke van deze voorgestelde eerdere toestanden, als er al één klopt, de oorsprong van ons heelal beschrijft.",
-    "Biz álemniń ishinde turıp, álemdi túsiniwge umtılamız. Hár bir teleskop sırtqa qaraydı. Hár bir teńleme jáne de uzaqqa jetedi. Biraq baqlawlar usınılǵan aldınǵı jaǵdaylardıń qaysısı álemimizdiń kelip shıǵıwın túsindiretuǵının yaki olardıń birewi durıs ekenin ele anıqlaǵan joq.",
-    "Биз әлемниң ишинде турып, әлемди түсиниўге умтыламыз. Ҳәр бир телескоп сыртқа қарайды. Ҳәр бир теңлеме және де узаққа жетеди. Бирақ бақлаўлар усынылған алдынғы жағдайлардың қайсысы әлемимиздиң келип шығыўын түсиндиретуғынын яки олардың биреўи дурыс екенин еле анықлаған жоқ."
-  ],
-  "p52": [
-    "The black hole remains one of our most profound laboratories of the unknown. It brings gravity, quantum physics, information, and the nature of time into the same unresolved conversation. Somewhere beyond our current theories, there may be a connection we have not yet discovered.",
-    "Het zwarte gat blijft een van onze diepzinnigste laboratoria van het onbekende. Het brengt zwaartekracht, kwantumfysica, informatie en de aard van de tijd samen in één onopgelost gesprek. Ergens voorbij onze huidige theorieën bestaat misschien een verband dat we nog niet hebben ontdekt.",
-    "Qara túynik belgisiz dúnyanı izertleytuǵın eń tereń laboratoriyalardıń biri bolıp qaladı. Ol tartılıs kúshin, kvant fizikasın, informaciyanı hám waqıttıń tábiyatın bir sheshilmegen sáwbette birlestiredi. Házirgi teoriyalarımızdan arıda biz ele ashpaǵan baylanıs bolıwı múmkin.",
-    "Қара түйник белгисиз дүняны изертлейтуғын ең терең лабораториялардың бири болып қалады. Ол тартылыс күшин, квант физикасын, информацияны ҳәм ўақыттың тәбиятын бир шешилмеген сәўбетте бирлестиреди. Ҳәзирги теорияларымыздан арыда биз еле ашпаған байланыс болыўы мүмкин."
-  ],
-  "p53": [
-    "Not proof of another universe. Not evidence of an eternal cycle. But a possibility worth investigating.",
-    "Geen bewijs voor een ander heelal. Geen aanwijzing voor een eeuwige cyclus. Wel een mogelijkheid die het onderzoeken waard is.",
-    "Bul basqa álemniń dálili emes. Máńgilik aylanıstıń tastıyıǵı da emes. Biraq izertlewge arziytuǵın múmkinshilik.",
-    "Бул басқа әлемниң дәлили емес. Мәңгилик айланыстың тастыйығы да емес. Бирақ изертлеўге арзийтуғын мүмкиншилик."
-  ],
-  "q5": [
-    "What if the darkness does not conceal the end of reality, but the limits of how we understand its beginning?",
-    "Wat als de duisternis niet het einde van de werkelijkheid verbergt, maar de grenzen van ons begrip van haar begin?",
-    "Eger qarańǵılıq bolmıstıń aqırın emes, al onıń baslanıwın túsiniwimizdiń shegaraların jasırsa she?",
-    "Егер қараңғылық болмыстың ақырын емес, ал оның басланыўын түсиниўимиздиң шегараларын жасырса ше?"
-  ],
-  "end": [
-    "The end may not be the opposite of the beginning.",
-    "Het einde is misschien niet het tegenovergestelde van het begin.",
-    "Aqır baslanıwdıń qarama-qarsısı bolmawı múmkin.",
-    "Ақыр басланыўдың қарама-қарсысы болмаўы мүмкин."
-  ],
-  "endnote": [
-    "It may be the boundary from which another beginning becomes possible.",
-    "Het kan de grens zijn waar een ander begin mogelijk wordt.",
-    "Ol basqa bir baslanıwǵa jol ashatuǵın shegara bolıwı múmkin.",
-    "Ол басқа бир басланыўға жол ашатуғын шегара болыўы мүмкин."
-  ],
-  "sources": [
-    "Where the science ends, and speculation begins",
-    "Waar wetenschap eindigt en speculatie begint",
-    "Ilim qay jerde tamamlanıp, boljam qay jerde baslanadı",
-    "Илим қай жерде тамамланып, болжам қай жерде басланады"
   ],
   "s1": [
     "Established: black holes and the hot, expanding early universe are strongly supported by observations. A classical singularity indicates a limit of the theory, not an observed gateway.",
@@ -323,11 +269,47 @@ window.JOURNAL_ZERO_COPY = {
     "Issı Úlken partlaw dáslepki ıssı, tıǵız dáwirdi hám onnan keyingi keńeyiwdi sıpatlaydı. Bul óz-ózinen absolyut birinshi sát bolǵan-bolmaǵanın sheshpeydi. Bul esse ashıq sorawlardı dálil retinde emes, qıyal ushın baslanǵısh retinde qollanadı.",
     "Иссы Үлкен партлаў дәслепки ыссы, тығыз дәўирди ҳәм оннан кейинги кеңейиўди сыпатлайды. Бул өз-өзинен абсолют биринши сәт болған-болмағанын шешпейди. Бул ессе ашық сораўларды дәлил ретинде емес, қыял ушын басланғыш ретинде қолланады."
   ],
-  "all": [
-    "All journal entries",
-    "Alle artikelen",
-    "Barlıq kúndelik jazbaları",
-    "Барлық күнделик жазбалары"
+  "skip": [
+    "Skip to the story",
+    "Ga naar het verhaal",
+    "Gúrrińge ótiw",
+    "Гүрриңге өтиў"
+  ],
+  "sources": [
+    "Where the science ends, and speculation begins",
+    "Waar wetenschap eindigt en speculatie begint",
+    "Ilim qay jerde tamamlanıp, boljam qay jerde baslanadı",
+    "Илим қай жерде тамамланып, болжам қай жерде басланады"
+  ],
+  "subtitle": [
+    "Exploring the boundary between what we know and what we can imagine.",
+    "Op de grens tussen wat we weten en wat we ons kunnen voorstellen.",
+    "Bilgenimiz benen qıyal ete alatuǵınımız arasındaǵı shegaranı izertlew.",
+    "Билгенимиз бенен қыял ете алатуғынымыз арасындағы шегараны изертлеў."
+  ],
+  "tag1": [
+    "I / What we know",
+    "I / Wat we weten",
+    "I / Biz ne bilemiz",
+    "И / Биз не билемиз"
+  ],
+  "tag2": [
+    "II / What we are still asking",
+    "II / Wat we ons nog afvragen",
+    "II / Ele juwap izlep atırǵan sorawlarımız",
+    "ИИ / Еле жуўап излеп атырған сораўларымыз"
+  ],
+  "tag3": [
+    "III / Room for a question",
+    "III / Ruimte voor een vraag",
+    "III / Soraw ushın orın",
+    "ИИИ / Сораў ушын орын"
+  ],
+  "title": [
+    "Before the Beginning",
+    "Vóór het begin",
+    "Baslanıwdan aldın",
+    "Басланыўдан алдын"
   ],
   "top": [
     "Back to top",
@@ -335,28 +317,10 @@ window.JOURNAL_ZERO_COPY = {
     "Joqarıǵa qaytıw",
     "Жоқарыға қайтыў"
   ],
-  "language": [
-    "Language",
-    "Taal",
-    "Til",
-    "Тил"
-  ],
-  "credit": [
-    "QARA TUYNIK · I. Urazov · A philosophical, scientifically inspired essay",
-    "QARA TUYNIK · I. Urazov · Een filosofisch, wetenschappelijk geïnspireerd essay",
-    "QARA TUYNIK · I. Urazov · Ilimnen ilhamlanǵan filosofiyalıq esse",
-    "QARA TUYNIK · И. Уразов · Илимнен илҳамланған философиялық ессе"
-  ],
-  "skip": [
-    "Skip to the story",
-    "Ga naar het verhaal",
-    "Gúrrińge ótiw",
-    "Гүрриңге өтиў"
-  ],
-  "nav": [
-    "Journal navigation",
-    "Dagboeknavigatie",
-    "Kúndelik navigaciyası",
-    "Күнделик навигациясы"
+  "transition": [
+    "Hypothetical transition",
+    "Hypothetische overgang",
+    "Boljamlı ótiw",
+    "Болжамлы өтиў"
   ]
 };
