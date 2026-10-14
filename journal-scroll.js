@@ -3,6 +3,7 @@
   const file = location.pathname.split('/').pop();
   document.querySelectorAll('nav.journal-quick').forEach(nav => {
     if (!nav.querySelector('a[href="journal11.html"]')) { const a=document.createElement('a'); a.href='journal11.html'; a.textContent='11'; nav.append(a); }
+    if (!nav.querySelector('a[href="journal12.html"]')) {const a=document.createElement('a');a.href='journal12.html';a.textContent='12';nav.append(a);}
     const links = Array.from(nav.querySelectorAll('a'));
     links.forEach(link => {
       if (link.getAttribute('href') === file) link.setAttribute('aria-current', 'page');
