@@ -18,10 +18,10 @@ window.qaraJournal12={
     "Қус жолы — Балалығымның ең анық естелиги"
   ],
   "opening": [
-    "Before I understood the universe, I had already seen its beauty.",
-    "Voordat ik het heelal begreep, had ik zijn schoonheid al gezien.",
-    "Álemdi túsinbesten burın, men onıń gózzallıǵın kórgen edim.",
-    "Әлемди түсинбестен бурын, мен оның гөззаллығын көрген едим."
+    "I remember the night sky above Nukus long before I knew what a galaxy was.",
+    "Ik herinner me de nachtelijke hemel boven Nukus, lang voordat ik wist wat een sterrenstelsel was.",
+    "Galaktikanıń ne ekenin bilmezden burınǵı Nókis ústindegi túngi aspan ele esimde.",
+    "Галактиканың не екенин билмезден бурынғы Нөкис үстиндеги түнги аспан еле есимде."
   ],
   "p1": [
     "Before I knew what a galaxy was, I knew the stars.",
@@ -30,16 +30,16 @@ window.qaraJournal12={
     "Галактиканың не екенин билмезден бурын, мен жулдызларды билетуғын едим."
   ],
   "p2": [
-    "Somewhere beneath the night sky of Karakalpakstan, I remember looking upward. The darkness was immense, yet it was never empty.",
-    "Ik herinner me hoe ik ergens onder de nachtelijke hemel van Karakalpakstan omhoogkeek. De duisternis was immens, maar nooit leeg.",
-    "Qaraqalpaqstannıń túngi aspanı astında joqarıǵa qarap turǵanım esimde. Qarańǵılıq sheksiz kórinetuǵın edi, biraq ol hesh qashan bos emes edi.",
-    "Қарақалпақстанның түнги аспаны астында жоқарыға қарап турғаным есимде. Қараңғылық шексиз көринетуғын еди, бирақ ол ҳеш қашан бос емес еди."
+    "As a child in Nukus, I often looked up at the night sky. Seeing so many stars is one of my clearest childhood memories.",
+    "Als kind in Nukus keek ik vaak naar de nachtelijke hemel. Zoveel sterren zien is een van mijn helderste jeugdherinneringen.",
+    "Nókiste balalıq waqıtlarımda túngi aspanǵa kóp qaraytuǵın edim. Sonsha kóp juldızlardı kóriw — balalıǵımnıń eń anıq estelikleriniń biri.",
+    "Нөкисте балалық ўақытларымда түнги аспанға көп қарайтуғын едим. Сонша көп жулдызларды көриў — балалығымның ең анық естеликлериниң бири."
   ],
   "p3": [
-    "Countless stars stretched across the heavens. And among them, a pale, mysterious river of light — what I would later learn to call the Milky Way.",
-    "Ontelbare sterren strekten zich uit over de hemel. Daartussen lag een bleke, mysterieuze rivier van licht — wat ik later de Melkweg zou leren noemen.",
-    "San-sanaqsız juldızlar aspandı toltırǵan edi. Olardıń arasında bolsa aqsıl, sırlı jaqtılıq dáryası bar edi. Keyinirek onıń Qus jolı dep atalatuǵının bildim.",
-    "Сан-санақсыз жулдызлар аспанды толтырған еди. Олардың арасында болса ақсыл, сырлы жақтылық дәрьясы бар еди. Кейинирек оның Қус жолы деп аталатуғынын билдим."
+    "Among the stars was a faint band of light. I would later learn that it was the Milky Way.",
+    "Tussen de sterren zag ik een zwakke lichtband. Later leerde ik dat dit de Melkweg was.",
+    "Juldızlar arasında aqsıl jaqtılıq jolaǵı kórinetuǵın edi. Keyinirek onıń Qus jolı ekenin bildim.",
+    "Жулдызлар арасында ақсыл жақтылық жолағы көринетуғын еди. Кейинирек оның Қус жолы екенин билдим."
   ],
   "p4": [
     "I did not know that I was looking into the galaxy that held our Sun, our Earth, and everything I had ever known.",
@@ -60,22 +60,22 @@ window.qaraJournal12={
     "Мен тек оның гөззаллығын сезетуғын едим."
   ],
   "p6": [
-    "Years passed. Childhood became memory. The stars acquired names, distances, temperatures, and histories. The mysterious river became a galaxy.",
-    "De jaren gingen voorbij. Mijn jeugd werd een herinnering. De sterren kregen namen, afstanden, temperaturen en verhalen. De mysterieuze rivier werd een sterrenstelsel.",
-    "Jıllar ótti. Balalıq estelikke aylandı. Juldızlardıń atların, aralıqların, temperaturaların hám tariyxların úyrendim. Sırlı dárya galaktikaǵa aylandı.",
-    "Жыллар өтти. Балалық естеликке айланды. Жулдызлардың атларын, аралықларын, температураларын ҳәм тарийхларын үйрендим. Сырлы дәрья галактикаға айланды."
+    "Years later, I began learning about stars and galaxies. Today, I explore that interest through a telescope and camera.",
+    "Jaren later begon ik meer te leren over sterren en sterrenstelsels. Vandaag geef ik die belangstelling vorm met een telescoop en camera.",
+    "Jıllar ótkennen keyin juldızlar hám galaktikalar haqqında úyrene basladım. Búgin sol qızıǵıwshılıǵımdı teleskop hám kamera arqalı dawam ettirip atırman.",
+    "Жыллар өткеннен кейин жулдызлар ҳәм галактикалар ҳаққында үйрене басладым. Бүгин сол қызығыўшылығымды телескоп ҳәм камера арқалы даўам еттирип атырман."
   ],
   "wonder": [
-    "But knowledge never erased that first wonder.",
-    "Maar kennis heeft die eerste verwondering nooit uitgewist.",
-    "Biraq bilim sol dáslepki tańlanıwdı hesh qashan joǵaltpadı.",
-    "Бирақ билим сол дәслепки таңланыўды ҳеш қашан жоғалтпады."
+    "There is still so much I do not know.",
+    "Er is nog zoveel dat ik niet weet.",
+    "Men ele bilmeytuǵın nárseler júdá kóp.",
+    "Мен еле билмейтуғын нәрселер жүдә көп."
   ],
   "p7": [
-    "Sometimes I think the clearest memories are not the things we remember seeing.",
-    "Soms denk ik dat onze helderste herinneringen niet de dingen zijn die we ons herinneren te hebben gezien.",
-    "Geyde eń anıq estelikler — kórgen nárselerimiz emes dep oylayman.",
-    "Гейде ең анық естеликлер — көрген нәрселеримиз емес деп ойлайман."
+    "Learning more has made the sky more interesting to me. But I still remember how it felt to look up as a child, without knowing the names of what I was seeing.",
+    "Door meer te leren vind ik de hemel nog interessanter. Maar ik herinner me nog hoe het voelde om als kind omhoog te kijken, zonder te weten hoe alles heette.",
+    "Kóbirek úyrengen sayın, aspan maǵan jáne de qızıǵıraq bolıp baratır. Biraq balalıqta kórgenlerimniń atların bilmey, joqarıǵa qarap turǵanımdaǵı sezim ele esimde.",
+    "Көбирек үйренген сайын, аспан маған және де қызығырақ болып баратыр. Бирақ балалықта көргенлеримниң атларын билмей, жоқарыға қарап турғанымдағы сезим еле есимде."
   ],
   "p8": [
     "They are the things we remember feeling.",
@@ -84,10 +84,10 @@ window.qaraJournal12={
     "Олар — сезген сезимлеримиз."
   ],
   "p9": [
-    "And perhaps that is why, after all these years, I still look upward.",
-    "En misschien kijk ik daarom, na al die jaren, nog steeds omhoog.",
-    "Bálkim, sonıń ushın osınsha jıldan keyin de men ele joqarıǵa qarayman.",
-    "Бәлким, соның ушын осынша жылдан кейин де мен еле жоқарыға қарайман."
+    "That childhood sky above Nukus is part of why I keep looking up—and why I want to photograph it.",
+    "Die hemel uit mijn jeugd in Nukus is een van de redenen waarom ik omhoog blijf kijken en de hemel wil fotograferen.",
+    "Nókistegi balalıq aspanım — ele de joqarıǵa qarawımnıń hám aspandı súwretke túsirgim keliwiniń sebepleriniń biri.",
+    "Нөкистеги балалық аспаным — еле де жоқарыға қараўымның ҳәм аспанды сүўретке түсиргим келиўиниң себеплериниң бири."
   ],
   "p10": [
     "Not only to discover something new.",
@@ -102,10 +102,10 @@ window.qaraJournal12={
     "Ал ҳеш қашан жоғалтпаған нәрсемди табыў ушын."
   ],
   "ending": [
-    "The stars in my eyes.",
-    "De sterren in mijn ogen.",
-    "Kózlerimdegi juldızlardı.",
-    "Көзлеримдеги жулдызларды."
+    "I learned its name. I never forgot its beauty.",
+    "Ik leerde zijn naam. Zijn schoonheid vergat ik nooit.",
+    "Men onıń atın bildim. Gózzallıǵın bolsa hesh qashan umıtmadım.",
+    "Мен оның атын билдим. Гөззаллығын болса ҳеш қашан умытпадым."
   ],
   "all": [
     "All entries",
@@ -144,10 +144,10 @@ window.qaraJournal12={
     "Видео файлын ашыў"
   ],
   "desc": [
-    "12 · Memory · A childhood sky in Karakalpakstan",
-    "12 · Herinnering · De hemel boven mijn jeugd",
-    "12 · Estelik · Qaraqalpaqstandaǵı balalıq aspanı",
-    "12 · Естелик · Қарақалпақстандағы балалық аспаны"
+    "12 · Memory · A childhood sky in Nukus",
+    "12 · Herinnering · Mijn jeugd onder de hemel van Nukus",
+    "12 · Estelik · Nókistegi balalıq aspanı",
+    "12 · Естелик · Нөкистеги балалық аспаны"
   ],
   "credit": [
     "Memory & creative direction · I. Urazov",
@@ -160,5 +160,29 @@ window.qaraJournal12={
     "Redactionele verfijning, vertalingen en websiteontwikkeling ondersteund door ChatGPT van OpenAI.",
     "Tekstti jetilistiriw, awdarmalar hám veb-sayttı islep shıǵıwda OpenAI ChatGPT járdem berdi.",
     "Текстти жетилистириў, аўдармалар ҳәм веб-сайтты ислеп шығыўда OpenAI ChatGPT жәрдем берди."
+  ],
+  "moreFilms": [
+    "More moments under the sky",
+    "Meer momenten onder de hemel",
+    "Aspan astındaǵı basqa sáwhetler",
+    "Аспан астындағы басқа сәўҳетлер"
+  ],
+  "newNote": [
+    "Two more films accompanying this memory. Press play to watch with sound.",
+    "Nog twee films bij deze herinnering. Druk op afspelen om met geluid te kijken.",
+    "Bul estelikke qosımsha jáne eki film. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
+    "Бул естеликке қосымша және еки фильм. Даўыс пенен көриў ушын ойнатыў түймесин басың."
+  ],
+  "newCredits": [
+    "Music credits for the two films",
+    "Muziekcredits voor de twee films",
+    "Eki filmniń muzıkası",
+    "Еки фильмниң музыкасы"
+  ],
+  "lyrics": [
+    "Lyrics shared with this entry · Metrik — Dawnbreaker",
+    "Liedtekst bij dit verhaal · Metrik — Dawnbreaker",
+    "Bul jazbaǵa qosılǵan qosıq sózleri · Metrik — Dawnbreaker",
+    "Бул жазбаға қосылған қосық сөзлери · Metrik — Dawnbreaker"
   ]
 };
