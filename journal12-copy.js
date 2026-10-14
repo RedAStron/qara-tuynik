@@ -125,24 +125,6 @@ window.qaraJournal12={
     "Este qalǵan aspan",
     "Есте қалған аспан"
   ],
-  "filmNote": [
-    "A film accompanying the memory · 02:04. Press play to watch with sound.",
-    "Een film bij de herinnering · 02:04. Druk op afspelen om met geluid te kijken.",
-    "Estelikke qosımsha film · 02:04. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
-    "Естеликке қосымша фильм · 02:04. Даўыс пенен көриў ушын ойнатыў түймесин басың."
-  ],
-  "music": [
-    "Music",
-    "Muziek",
-    "Muzıka",
-    "Музыка"
-  ],
-  "download": [
-    "Open video file",
-    "Videobestand openen",
-    "Video faylın ashıw",
-    "Видео файлын ашыў"
-  ],
   "desc": [
     "12 · Memory · A childhood sky in Nukus",
     "12 · Herinnering · Mijn jeugd onder de hemel van Nukus",
@@ -161,28 +143,22 @@ window.qaraJournal12={
     "Tekstti jetilistiriw, awdarmalar hám veb-sayttı islep shıǵıwda OpenAI ChatGPT járdem berdi.",
     "Текстти жетилистириў, аўдармалар ҳәм веб-сайтты ислеп шығыўда OpenAI ChatGPT жәрдем берди."
   ],
-  "moreFilms": [
-    "More moments under the sky",
-    "Meer momenten onder de hemel",
-    "Aspan astındaǵı basqa sáwhetler",
-    "Аспан астындағы басқа сәўҳетлер"
+  "filmNote": [
+    "A film accompanying the memory. Press play to watch with sound.",
+    "Een film bij de herinnering. Druk op afspelen om met geluid te kijken.",
+    "Estelikke qosımsha film. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
+    "Естеликке қосымша фильм. Даўыс пенен көриў ушын ойнатыў түймесин басың."
   ],
-  "newNote": [
-    "Two more films accompanying this memory. Press play to watch with sound.",
-    "Nog twee films bij deze herinnering. Druk op afspelen om met geluid te kijken.",
-    "Bul estelikke qosımsha jáne eki film. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
-    "Бул естеликке қосымша және еки фильм. Даўыс пенен көриў ушын ойнатыў түймесин басың."
+  "music": [
+    "Music",
+    "Muziek",
+    "Muzıka",
+    "Музыка"
   ],
-  "newCredits": [
-    "Music credits for the two films",
-    "Muziekcredits voor de twee films",
-    "Eki filmniń muzıkası",
-    "Еки фильмниң музыкасы"
-  ],
-  "lyrics": [
-    "Lyrics shared with this entry · Metrik — Dawnbreaker",
-    "Liedtekst bij dit verhaal · Metrik — Dawnbreaker",
-    "Bul jazbaǵa qosılǵan qosıq sózleri · Metrik — Dawnbreaker",
-    "Бул жазбаға қосылған қосық сөзлери · Metrik — Dawnbreaker"
+  "download": [
+    "Open video file",
+    "Videobestand openen",
+    "Video faylın ashıw",
+    "Видео файлын ашыў"
   ]
 };
