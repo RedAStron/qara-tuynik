@@ -18,10 +18,10 @@ window.qaraJournal12={
     "Қус жолы — Балалығымның ең анық естелиги"
   ],
   "opening": [
-    "I remember the night sky above Nukus long before I knew what a galaxy was.",
-    "Ik herinner me de nachtelijke hemel boven Nukus, lang voordat ik wist wat een sterrenstelsel was.",
-    "Galaktikanıń ne ekenin bilmezden burınǵı Nókis ústindegi túngi aspan ele esimde.",
-    "Галактиканың не екенин билмезден бурынғы Нөкис үстиндеги түнги аспан еле есимде."
+    "The names came later. The memory stayed.",
+    "De namen kwamen later. De herinnering bleef.",
+    "Atların keyin bildim. Esteligi bolsa qaldı.",
+    "Атларын кейин билдим. Естелиги болса қалды."
   ],
   "p1": [
     "Before I knew what a galaxy was, I knew the stars.",
@@ -144,10 +144,10 @@ window.qaraJournal12={
     "Текстти жетилистириў, аўдармалар ҳәм веб-сайтты ислеп шығыўда OpenAI ChatGPT жәрдем берди."
   ],
   "filmNote": [
-    "A film accompanying the memory. Press play to watch with sound.",
-    "Een film bij de herinnering. Druk op afspelen om met geluid te kijken.",
-    "Estelikke qosımsha film. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
-    "Естеликке қосымша фильм. Даўыс пенен көриў ушын ойнатыў түймесин басың."
+    "A quiet moment with the sky. Press play to watch with sound.",
+    "Een rustig moment met de hemel. Druk op afspelen om met geluid te kijken.",
+    "Aspan menen tınısh bir sáwhet. Dawıs penen kóriw ushın oynatıw túymesin basıń.",
+    "Аспан менен тыныш бир сәўҳет. Даўыс пенен көриў ушын ойнатыў түймесин басың."
   ],
   "music": [
     "Music",
@@ -160,5 +160,23 @@ window.qaraJournal12={
     "Videobestand openen",
     "Video faylın ashıw",
     "Видео файлын ашыў"
+  ],
+  "chapter2": [
+    "The Light Between",
+    "Het licht ertussen",
+    "Aramızdaǵı jaqtılıq",
+    "Арамыздағы жақтылық"
+  ],
+  "chapter3": [
+    "Still Looking Up",
+    "Nog steeds omhoog kijken",
+    "Ele de aspanǵa qarayman",
+    "Еле де аспанға қарайман"
+  ],
+  "eyeCaption": [
+    "A remembered sky, imagined in an eye · Conceptual image",
+    "Een herinnerde hemel, verbeeld in een oog · Conceptueel beeld",
+    "Este qalǵan aspan, kózde sáwlelengen · Konceptual súwret",
+    "Есте қалған аспан, көзде сәўлеленген · Концептуал сүўрет"
   ]
 };
