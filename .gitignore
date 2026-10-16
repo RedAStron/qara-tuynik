@@ -1,0 +1,5 @@
+# Website media is hosted in Cloudflare R2.
+/assets/
+/journal*-assets/
+/photo-*.jpg
+/concorde-film.mp4
