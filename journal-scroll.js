@@ -6,6 +6,7 @@
     if (!nav.querySelector('a[href="journal12.html"]')) {const a=document.createElement('a');a.href='journal12.html';a.textContent='12';nav.append(a);}
     if (!nav.querySelector('a[href="journal13.html"]')) {const a=document.createElement('a');a.href='journal13.html';a.textContent='13';nav.append(a);}
     if (!nav.querySelector('a[href="journal14.html"]')) {const a=document.createElement("a");a.href="journal14.html";a.textContent="14";nav.append(a);}
+    if (!nav.querySelector('a[href="journal15.html"]')) {const a=document.createElement("a");a.href="journal15.html";a.textContent="15";nav.append(a);}
     const links = Array.from(nav.querySelectorAll('a'));
     links.forEach(link => {
       if (link.getAttribute('href') === file) link.setAttribute('aria-current', 'page');
