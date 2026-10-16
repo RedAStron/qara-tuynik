@@ -11,3 +11,24 @@
 .night .chapter-copy p[data-c="p4"]{font:italic clamp(28px,4vw,43px)/1.4 Georgia,serif;color:#e4d999;margin:38px 0}
 .ending{font-size:clamp(29px,4.4vw,52px)}
 @media(max-width:700px){.opening-text{padding:30px 22px 12px}.opening h1{font-size:clamp(36px,9vw,64px)}.opening .cover{height:43svh;min-height:220px;margin:auto 0}.opening .subtitle{font-size:24px}.opening .follow{margin:0 22px}.art-caption{padding:16px 22px}.chapter-copy{overflow-wrap:break-word}}
+/* Entry 06-inspired cinematic opening: full bleed artwork and overlaid type. */
+body{background:#090b11;color:#eee9e0}
+.masthead{position:absolute;inset:0 0 auto;z-index:5;max-width:none;padding:24px 5vw;background:linear-gradient(#05080bc9,transparent);color:#f3eee5}
+.masthead select{color:#f3eee5;background:#090b11b8;border-color:#c3996e88}
+body nav.journal-quick a{color:#e5d9c8;border-color:#c3996e66}
+body nav.journal-quick a[aria-current]{background:#c3996e33;border-color:#d7b483}
+.opening{height:100svh;min-height:650px;position:relative;isolation:isolate;overflow:hidden;display:flex;justify-content:center;align-items:center;text-align:center;background:#090b11}
+.opening .cover{position:absolute;inset:0;z-index:-3;width:100%;height:100%;min-height:0;margin:0}
+.opening .cover img{height:100%;width:100%;object-fit:cover;object-position:50% 50%}
+.opening:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,#04070b70 0%,#04070b15 25%,#04070b60 65%,#090b11 100%)}
+.opening:after{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,transparent 10%,#03060a55 100%)}
+.opening-text{width:100%;max-width:1500px;margin:0;padding:170px 24px 120px;text-shadow:0 3px 25px #0009}
+.title-row{justify-content:center}.red-shape{display:none}
+.opening .eyebrow{color:#ead3b1;letter-spacing:.28em;font-weight:600}
+.opening h1{font-family:system-ui,sans-serif;font-size:clamp(37px,10.5vw,168px);font-weight:600;letter-spacing:-.065em;line-height:1.05;text-transform:uppercase;margin:30px 0}
+.opening .subtitle{font:300 clamp(19px,2.5vw,32px)/1.5 system-ui,sans-serif;color:#f1e5d8;max-width:700px;margin:0 auto}
+.opening .follow{position:absolute;bottom:62px;left:50%;transform:translateX(-50%);margin:0;padding:12px 0;gap:24px;border:0;color:#f1e5d8;white-space:nowrap;text-transform:uppercase;font-size:10px;letter-spacing:.2em}
+.art-caption{position:absolute;bottom:14px;left:0;right:0;font-size:9px;letter-spacing:.08em;color:#9faaa9;padding:0 20px}
+.daylight{color:#c9c8ce}.daylight h2{color:#f3eee5}.chapter-label,.pull{color:#d7b483}.pull{border-color:#c3996e}.night{background:#090b11}.night:before{height:1px;background:#c3996e33}.night .chapter-label{color:#d7b483}
+.video-credit{font-size:13px;color:#d7b483;margin:0 0 28px}
+@media(max-width:700px){.masthead{padding:18px 20px}.opening{min-height:660px}.opening-text{padding:160px 22px 120px}.opening h1{font-size:clamp(32px,9.3vw,64px);letter-spacing:-.065em;overflow-wrap:normal}.opening .eyebrow{font-size:9px;letter-spacing:.16em}.opening .subtitle{font-size:21px;max-width:330px}.opening .cover{height:100%;margin:0}.opening .follow{margin:0;bottom:65px}.chapter{padding-top:75px;padding-bottom:75px}}
