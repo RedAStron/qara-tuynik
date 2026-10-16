@@ -1,0 +1,52 @@
+/* Shared journal navigation: native touch/trackpad scrolling, no page motion. */
+body nav.journal-quick {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  grid-column: 1 / -1;
+  flex-basis: 100%;
+  order: 3;
+  margin: 0;
+  padding: 5px 3px 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #a58660 transparent;
+}
+body nav.journal-quick a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+  margin: 0;
+  white-space: nowrap;
+  border: 1px solid #967853;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+body nav.journal-quick a[aria-current="page"] {
+  border-color: #c7a16e;
+  background: rgba(177, 132, 76, .20);
+  box-shadow: inset 0 0 0 1px #c7a16e;
+}
+body nav.journal-quick a:focus-visible {
+  outline: 2px solid #c7a16e;
+  outline-offset: 2px;
+}
+body nav.journal-quick::-webkit-scrollbar { height: 5px; }
+body nav.journal-quick::-webkit-scrollbar-thumb { background: #a58660; border-radius: 8px; }
+body nav.journal-quick::-webkit-scrollbar-track { background: transparent; }
