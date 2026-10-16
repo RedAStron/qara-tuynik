@@ -8,3 +8,11 @@
 .qt-wheel-item{width:100%}
 .qt-wheel-item.is-active{border:1px solid #94765f}
 @media(max-width:700px){#journal .qt-wheel{margin-top:18px}.qt-wheel-item{min-height:53px}.qt-wheel-item.is-active{min-height:105px}.qt-wheel-items{gap:3px;padding:12px 0}.qt-wheel-top{font-size:9px}}
+
+/* Fixed-size SVG arrows, immune to global button padding on mobile. */
+#journal .qt-wheel-actions{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;gap:16px;margin:20px auto 0;max-width:440px}
+#journal .qt-wheel-actions button{appearance:none;-webkit-appearance:none;box-sizing:border-box;display:grid;place-items:center;width:48px;height:48px;min-width:48px;min-height:48px;max-width:48px;max-height:48px;padding:0;margin:0;line-height:1;border:1px solid #94765f;border-radius:50%;background:transparent;color:#dfb999;flex:none}
+#journal .qt-wheel-actions button svg{display:block;width:22px;height:22px;pointer-events:none}
+#journal .qt-wheel-hint{font-size:10px;line-height:1.5;letter-spacing:.08em;text-align:center}
+#journal .qt-wheel-item.is-active{cursor:pointer}
+@media(max-width:360px){#journal .qt-wheel-actions{gap:10px}#journal .qt-wheel-hint{font-size:9px}}
