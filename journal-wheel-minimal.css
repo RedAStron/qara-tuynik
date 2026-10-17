@@ -1,0 +1,22 @@
+/* Minimal journal wheel — no highlighted boxes or redundant links. */
+#journal .qt-original-cards{display:none!important}
+#journal .qt-wheel{max-width:760px;margin:24px auto;color:#ead7c6;text-align:center}
+#journal .qt-wheel-top{display:flex;justify-content:space-between;gap:16px;text-align:left;font-size:10px;letter-spacing:.13em;color:#ad8e72}
+#journal .qt-counter{white-space:nowrap;font-size:12px}
+#journal .qt-wheel-viewport{overflow:hidden;position:relative;touch-action:pan-y;mask-image:linear-gradient(transparent,#000 18%,#000 82%,transparent)}
+#journal .qt-wheel-items{display:grid;gap:4px;padding:20px 0}
+#journal .qt-wheel-item{appearance:none!important;-webkit-appearance:none!important;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;width:100%;min-height:68px;padding:12px 16px;margin:0;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#cab5a0;font:inherit;cursor:pointer;transition:opacity .2s,transform .2s}
+#journal .qt-wheel-number{font-size:11px;letter-spacing:.22em;color:#b79675}
+#journal .qt-wheel-title{font-size:clamp(19px,3vw,30px);line-height:1.3;font-weight:400}
+#journal .qt-wheel-subtitle{font-size:13px;line-height:1.6;color:#a69e95;max-width:540px}
+#journal .qt-depth-1{opacity:.42;transform:scale(.94)}
+#journal .qt-depth-2{opacity:.16;transform:scale(.88)}
+#journal .qt-wheel-item.is-active{min-height:135px;color:#f1e4d2;opacity:1;transform:none;border:0!important;background:none!important;box-shadow:none!important}
+#journal .qt-wheel-actions{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;gap:12px;max-width:390px;margin:18px auto 0}
+#journal .qt-wheel-actions button{appearance:none!important;-webkit-appearance:none!important;box-sizing:border-box;display:grid!important;place-items:center;width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;max-width:48px!important;max-height:48px!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:#d8b28b;line-height:1;cursor:pointer}
+#journal .qt-wheel-actions svg{display:block;width:24px;height:24px;pointer-events:none}
+#journal .qt-wheel-hint{font-size:9px;letter-spacing:.16em;line-height:1.6;color:#9f8c79;text-align:center}
+#journal .qt-open,#journal .qt-all,#journal .qt-full{display:none!important}
+#journal .qt-wheel button:focus-visible,#journal .qt-wheel-viewport:focus-visible{outline:2px solid #cba982!important;outline-offset:2px}
+@media(max-width:700px){#journal .qt-wheel-item{min-height:56px;padding:9px 8px}#journal .qt-wheel-item.is-active{min-height:125px}#journal .qt-wheel-top{font-size:9px}#journal .qt-wheel-title{font-size:21px}#journal .qt-wheel-subtitle{font-size:12px}#journal .qt-wheel-items{gap:3px}}
+@media(prefers-reduced-motion:reduce){#journal .qt-wheel-item{transition:none}}
