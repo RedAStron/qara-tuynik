@@ -1,12 +1,17 @@
-/* ==========================================
+/* =====================================================
    QARA TUYNIK — CINEMATIC OPENING
-   Edge-to-edge video + floating navigation
-========================================== */
+   Full-width video · Transparent navigation
+   Dark / Solarized Light compatibility
+===================================================== */
 
-/* OPENING SECTION */
+
+/* =====================================================
+   01 — CINEMATIC OPENING
+===================================================== */
 
 #opening-cinema {
   position: relative;
+
   width: 100%;
   max-width: none;
   min-height: 0;
@@ -26,7 +31,10 @@
   box-sizing: border-box;
 }
 
-/* VIDEO FRAME */
+
+/* =====================================================
+   02 — VIDEO FRAME
+===================================================== */
 
 #opening-cinema .opening-frame {
   display: block;
@@ -46,7 +54,11 @@
   background: #050608;
 }
 
-/* VIDEO — FULL WIDTH, NO CROPPING */
+
+/* =====================================================
+   03 — VIDEO
+   Edge to edge · No cropping · Original proportions
+===================================================== */
 
 #opening-film {
   display: block;
@@ -69,12 +81,14 @@
   background: #050608;
 }
 
-/* ==========================================
-   FLOATING HEADER / NAVIGATION
-========================================== */
+
+/* =====================================================
+   04 — CINEMATIC FLOATING HEADER
+===================================================== */
 
 body > header {
   position: absolute;
+
   top: 0;
   left: 0;
   right: 0;
@@ -83,30 +97,43 @@ body > header {
 
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.82) 0%,
-    rgba(0, 0, 0, 0.48) 55%,
-    transparent 100%
-  );
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.55) 65%,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
 
-  color: #fff;
+  color: #ffffff;
+
+  box-shadow: none;
 }
 
-/* LOGO */
+
+/* =====================================================
+   05 — HEADER LOGO
+===================================================== */
 
 body > header .brand {
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+
+  text-shadow:
+    0 2px 16px rgba(0, 0, 0, 0.85);
 }
 
-/* NAVIGATION */
+
+/* =====================================================
+   06 — NAVIGATION
+===================================================== */
 
 body > header .site-nav {
-  color: #fff;
+  color: #ffffff;
 }
 
 body > header .site-nav a {
-  color: #fff;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.8);
+
   transition: color 0.25s ease;
 }
 
@@ -114,18 +141,51 @@ body > header .site-nav a:hover {
   color: #e6c9a5;
 }
 
-/* HEADER BUTTONS */
+
+/* =====================================================
+   07 — HEADER BUTTONS
+===================================================== */
 
 body > header button {
   background: rgba(0, 0, 0, 0.35);
-  color: #fff;
+  color: #ffffff;
+
   border-color: rgba(255, 255, 255, 0.3);
+
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-/* ==========================================
-   VIDEO CREDITS AND CONTROLS
-========================================== */
+
+/* =====================================================
+   08 — HEADER DECORATION FIX
+   Prevent decorative layers from appearing over film
+===================================================== */
+
+body > header::before,
+body > header::after {
+  display: none;
+}
+
+
+/* =====================================================
+   09 — OPENING FILM THEME ISOLATION
+   Keep cinematic area dark in every theme
+===================================================== */
+
+#opening-cinema {
+  background-color: #050608;
+}
+
+#opening-cinema .opening-frame,
+#opening-film {
+  background-color: #050608;
+}
+
+
+/* =====================================================
+   10 — CREDITS AND CONTROLS
+===================================================== */
 
 #opening-cinema .opening-bottom {
   width: 100%;
@@ -141,12 +201,16 @@ body > header button {
   flex-wrap: wrap;
 }
 
-/* CREDITS */
+
+/* =====================================================
+   11 — VIDEO CREDITS
+===================================================== */
 
 #opening-cinema .opening-credit {
   margin: 0;
 
   font: 12px/1.7 system-ui, sans-serif;
+
   color: #bab4ab;
 
   max-width: 620px;
@@ -162,16 +226,23 @@ body > header button {
   color: #eee8df;
 }
 
-/* LINKS */
+
+/* =====================================================
+   12 — LINKS
+===================================================== */
 
 #opening-cinema a {
   text-underline-offset: 4px;
 }
 
-/* SOUND AND NAVIGATION */
+
+/* =====================================================
+   13 — SOUND AND ACTIONS
+===================================================== */
 
 #opening-cinema .opening-actions {
   display: flex;
+
   gap: 14px;
   align-items: center;
   flex-wrap: wrap;
@@ -182,18 +253,26 @@ body > header button {
   padding: 10px 16px;
 }
 
-/* EXPLORE BLACK HOLE */
+
+/* =====================================================
+   14 — EXPLORE BLACK HOLE
+===================================================== */
 
 #opening-cinema .opening-skip {
   display: inline-flex;
+
   align-items: center;
   gap: 12px;
 
   min-height: 44px;
+
   font-size: 13px;
 }
 
-/* STATUS */
+
+/* =====================================================
+   15 — STATUS
+===================================================== */
 
 #opening-cinema .opening-status {
   margin: 8px 5vw 0;
@@ -206,9 +285,10 @@ body > header button {
   display: none;
 }
 
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
+
+/* =====================================================
+   16 — MOBILE RESPONSIVE
+===================================================== */
 
 @media (max-width: 650px) {
 
@@ -219,27 +299,27 @@ body > header button {
 
   #opening-cinema .opening-frame {
     width: 100%;
+
     margin: 0;
     padding: 0;
   }
 
   #opening-film {
     width: 100%;
+
     height: auto;
     max-height: none;
+
     object-fit: contain;
   }
 
   body > header {
-    padding: 16px 5vw;
-    gap: 10px;
-
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.55) 70%,
       transparent
-    );
+    ) !important;
   }
 
   body > header .brand {
@@ -260,4 +340,18 @@ body > header button {
     width: 100%;
     justify-content: space-between;
   }
+
+}
+
+
+/* =====================================================
+   17 — REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  body > header .site-nav a {
+    transition: none;
+  }
+
 }
