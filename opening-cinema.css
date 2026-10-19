@@ -1,9 +1,9 @@
 /* ==========================================
    QARA TUYNIK — CINEMATIC OPENING
-   Full width / Original aspect ratio
+   Edge-to-edge video + floating navigation
 ========================================== */
 
-/* Main opening section */
+/* OPENING SECTION */
 
 #opening-cinema {
   position: relative;
@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  padding: var(--opening-header-height, 140px) 0 26px;
+  padding: 0 0 26px;
   margin: 0;
 
   background: #050608;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 
-/* Video container */
+/* VIDEO FRAME */
 
 #opening-cinema .opening-frame {
   display: block;
@@ -46,9 +46,9 @@
   background: #050608;
 }
 
-/* Video — edge to edge, no cropping */
+/* VIDEO — FULL WIDTH, NO CROPPING */
 
-#opening-cinema video {
+#opening-film {
   display: block;
 
   width: 100%;
@@ -69,7 +69,63 @@
   background: #050608;
 }
 
-/* Credits and controls */
+/* ==========================================
+   FLOATING HEADER / NAVIGATION
+========================================== */
+
+body > header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 100;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.48) 55%,
+    transparent 100%
+  );
+
+  color: #fff;
+}
+
+/* LOGO */
+
+body > header .brand {
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.85);
+}
+
+/* NAVIGATION */
+
+body > header .site-nav {
+  color: #fff;
+}
+
+body > header .site-nav a {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  transition: color 0.25s ease;
+}
+
+body > header .site-nav a:hover {
+  color: #e6c9a5;
+}
+
+/* HEADER BUTTONS */
+
+body > header button {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* ==========================================
+   VIDEO CREDITS AND CONTROLS
+========================================== */
 
 #opening-cinema .opening-bottom {
   width: 100%;
@@ -85,7 +141,7 @@
   flex-wrap: wrap;
 }
 
-/* Credits */
+/* CREDITS */
 
 #opening-cinema .opening-credit {
   margin: 0;
@@ -106,13 +162,13 @@
   color: #eee8df;
 }
 
-/* Links */
+/* LINKS */
 
 #opening-cinema a {
   text-underline-offset: 4px;
 }
 
-/* Sound and navigation */
+/* SOUND AND NAVIGATION */
 
 #opening-cinema .opening-actions {
   display: flex;
@@ -126,7 +182,7 @@
   padding: 10px 16px;
 }
 
-/* Explore black hole */
+/* EXPLORE BLACK HOLE */
 
 #opening-cinema .opening-skip {
   display: inline-flex;
@@ -137,7 +193,7 @@
   font-size: 13px;
 }
 
-/* Status messages */
+/* STATUS */
 
 #opening-cinema .opening-status {
   margin: 8px 5vw 0;
@@ -167,11 +223,32 @@
     padding: 0;
   }
 
-  #opening-cinema video {
+  #opening-film {
     width: 100%;
     height: auto;
     max-height: none;
     object-fit: contain;
+  }
+
+  body > header {
+    padding: 16px 5vw;
+    gap: 10px;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5) 70%,
+      transparent
+    );
+  }
+
+  body > header .brand {
+    font-size: 12px;
+  }
+
+  body > header .site-nav {
+    gap: 12px;
+    font-size: 12px;
   }
 
   #opening-cinema .opening-bottom {
