@@ -1,13 +1,186 @@
-#opening-cinema{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:var(--opening-header-height,140px) 0 26px;background:#050608;color:#eee8df;isolation:isolate}
-#opening-cinema .opening-frame{margin:0;width:100%;background:#050608}
-#opening-cinema video{display:block;width:100%;height:auto;max-height:calc(100svh - var(--opening-header-height,140px) - 130px);min-height:0;object-fit:contain;aspect-ratio:910/512;background:#050608}
-#opening-cinema .opening-bottom{padding:20px 5vw 0;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-#opening-cinema .opening-credit{margin:0;font:12px/1.7 system-ui,sans-serif;color:#bab4ab;max-width:620px}
-#opening-cinema .opening-credit strong{display:block;font-size:14px;font-weight:500;letter-spacing:.04em;color:#eee8df}
-#opening-cinema a{text-underline-offset:4px}
-#opening-cinema .opening-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-#opening-cinema .opening-actions button{min-height:44px;padding:10px 16px}
-#opening-cinema .opening-skip{display:inline-flex;align-items:center;gap:12px;min-height:44px;font-size:13px}
-#opening-cinema .opening-status{margin:8px 5vw 0;font-size:12px;color:#bab4ab}
-#opening-cinema .opening-status:empty{display:none}
-@media(max-width:650px){#opening-cinema{min-height:auto;padding-bottom:30px}#opening-cinema video{max-height:none}#opening-cinema .opening-bottom{align-items:flex-start;gap:16px}#opening-cinema .opening-actions{width:100%;justify-content:space-between}}
+/* ==========================================
+   QARA TUYNIK — CINEMATIC OPENING
+   Full width / Original aspect ratio
+========================================== */
+
+/* Main opening section */
+
+#opening-cinema {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: var(--opening-header-height, 140px) 0 26px;
+  margin: 0;
+
+  background: #050608;
+  color: #eee8df;
+
+  overflow: hidden;
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+/* Video container */
+
+#opening-cinema .opening-frame {
+  display: block;
+  position: relative;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  overflow: hidden;
+  background: #050608;
+}
+
+/* Video — edge to edge, no cropping */
+
+#opening-cinema video {
+  display: block;
+
+  width: 100%;
+  max-width: none;
+
+  height: auto;
+  max-height: none;
+  min-height: 0;
+
+  object-fit: contain;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0;
+
+  background: #050608;
+}
+
+/* Credits and controls */
+
+#opening-cinema .opening-bottom {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 20px 5vw 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Credits */
+
+#opening-cinema .opening-credit {
+  margin: 0;
+
+  font: 12px/1.7 system-ui, sans-serif;
+  color: #bab4ab;
+
+  max-width: 620px;
+}
+
+#opening-cinema .opening-credit strong {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  color: #eee8df;
+}
+
+/* Links */
+
+#opening-cinema a {
+  text-underline-offset: 4px;
+}
+
+/* Sound and navigation */
+
+#opening-cinema .opening-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#opening-cinema .opening-actions button {
+  min-height: 44px;
+  padding: 10px 16px;
+}
+
+/* Explore black hole */
+
+#opening-cinema .opening-skip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 44px;
+  font-size: 13px;
+}
+
+/* Status messages */
+
+#opening-cinema .opening-status {
+  margin: 8px 5vw 0;
+
+  font-size: 12px;
+  color: #bab4ab;
+}
+
+#opening-cinema .opening-status:empty {
+  display: none;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+
+  #opening-cinema {
+    min-height: 0;
+    padding-bottom: 30px;
+  }
+
+  #opening-cinema .opening-frame {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #opening-cinema video {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  #opening-cinema .opening-bottom {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  #opening-cinema .opening-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
