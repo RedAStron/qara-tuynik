@@ -1,0 +1,17 @@
+/* QARA TUYNIK — infinite corridor after the Black Hole WebGL */
+#cosmic-corridor-backdrop{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0;visibility:hidden;transition:opacity 850ms ease,visibility 850ms;overflow:hidden;background:#030405}
+#cosmic-corridor-backdrop::before{content:"";position:absolute;inset:-9% -5%;background:url("cosmic-corridor.webp") center 36% / cover no-repeat;transform:translate3d(0,var(--corridor-shift,0px),0) scale(1.06);will-change:transform}
+#cosmic-corridor-backdrop::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,3,6,.28),rgba(2,3,6,.64) 40%,rgba(2,3,6,.76) 80%,rgba(2,3,6,.92)),linear-gradient(90deg,rgba(0,0,0,.30),transparent 25%,transparent 75%,rgba(0,0,0,.30))}
+html.qt-corridor-visible #cosmic-corridor-backdrop{opacity:1;visibility:visible}
+/* All page content stays above the background; WebGL and opening remain untouched. */
+body:has(#cosmic-corridor-backdrop) main{isolation:isolate}
+body:has(#cosmic-corridor-backdrop) main > :not(#cosmic-corridor-backdrop){position:relative;z-index:1}
+body:has(#cosmic-corridor-backdrop) #opening-cinema,body:has(#cosmic-corridor-backdrop) #black-hole{z-index:2}
+/* Reveal the corridor through the sections, but retain solid media/cards. */
+html:not([data-qara-theme="solarized-light"]) body:has(#cosmic-corridor-backdrop) :is(#journal,#gallery,#sky-explorer,#collection,#heart-nebula,#observer,#discover,.about,.gallery,.collection,.nebula,.observer,.sf-launch){background-color:transparent!important;background-image:none!important}
+/* Give long-form text enough contrast over the photograph. */
+html:not([data-qara-theme="solarized-light"]) body:has(#cosmic-corridor-backdrop) :is(.nukus-story,.about-head,.observer-copy,.facts){text-shadow:0 1px 12px #000}
+/* Solarized light stays legible, and no dark band appears under the header. */
+html[data-qara-theme="solarized-light"] #cosmic-corridor-backdrop{opacity:0!important;visibility:hidden!important}
+@media(max-width:700px){#cosmic-corridor-backdrop::before{inset:-5%;background-position:center top;transform:none!important}#cosmic-corridor-backdrop::after{background:linear-gradient(180deg,#03040566,#030405bb 45%,#030405e8)}}
+@media(prefers-reduced-motion:reduce){#cosmic-corridor-backdrop{transition:none}#cosmic-corridor-backdrop::before{transform:none!important;will-change:auto}}
