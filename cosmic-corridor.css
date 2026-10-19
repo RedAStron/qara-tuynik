@@ -13,5 +13,5 @@ html:not([data-qara-theme="solarized-light"]) body:has(#cosmic-corridor-backdrop
 html:not([data-qara-theme="solarized-light"]) body:has(#cosmic-corridor-backdrop) :is(.nukus-story,.about-head,.observer-copy,.facts){text-shadow:0 1px 12px #000}
 /* Solarized light stays legible, and no dark band appears under the header. */
 html[data-qara-theme="solarized-light"] #cosmic-corridor-backdrop{opacity:0!important;visibility:hidden!important}
-@media(max-width:700px){#cosmic-corridor-backdrop::before{inset:-5%;background-position:center top;transform:none!important}#cosmic-corridor-backdrop::after{background:linear-gradient(180deg,#03040566,#030405bb 45%,#030405e8)}}
+@media(max-width:700px){#cosmic-corridor-backdrop::before{inset:-5%;background-image:url("cosmic-corridor-mobile.webp");background-position:center 30%;transform:none!important}#cosmic-corridor-backdrop::after{background:linear-gradient(180deg,#03040566,#030405bb 45%,#030405e8)}}
 @media(prefers-reduced-motion:reduce){#cosmic-corridor-backdrop{transition:none}#cosmic-corridor-backdrop::before{transform:none!important;will-change:auto}}
