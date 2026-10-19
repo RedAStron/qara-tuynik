@@ -1,0 +1,34 @@
+/* Solarized palette by Ethan Schoonover: https://ethanschoonover.com/solarized/ */
+#qara-theme-toggle{position:fixed!important;inset:auto auto calc(16px + env(safe-area-inset-bottom,0px)) 16px!important;z-index:9000;display:inline-flex!important;align-items:center;justify-content:center;gap:9px;width:auto!important;min-width:44px;min-height:44px!important;height:44px!important;margin:0!important;padding:10px 14px!important;border:1px solid #657b83!important;border-radius:24px!important;background:#073642!important;color:#fdf6e3!important;font:12px/1.2 system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important;box-shadow:0 3px 14px #0002!important;cursor:pointer;touch-action:manipulation}
+#qara-theme-toggle:focus-visible{outline:3px solid #268bd2!important;outline-offset:4px}
+html[data-qara-theme="solarized-light"]{color-scheme:light!important;--bg:#fdf6e3!important;--paper:#fdf6e3!important;--ink:#073642!important;--text:#586e75!important;--muted:#586e75!important;--gold:#8a6800!important;--accent:#007c78!important;--line:#93a1a1!important;--border:#93a1a1!important}
+html[data-qara-theme="solarized-light"] body{background:#fdf6e3!important;color:#586e75!important}
+html[data-qara-theme="solarized-light"] :where(h1,h2,h3,h4,h5,h6,p,span,strong,em,small,label,output,summary,figcaption,blockquote,li,dt,dd,footer,nav,button,a,div):not(.qt-dark-zone,.qt-dark-zone *){color:#586e75!important}
+html[data-qara-theme="solarized-light"] :where(h1,h2,h3,h4,strong,.brand,.qt-wheel-title):not(.qt-dark-zone,.qt-dark-zone *){color:#073642!important}
+html[data-qara-theme="solarized-light"] :where(a,.eyebrow,.chapter-no,.chapter-number,.chapter-index,.number,.qt-wheel-number):not(.qt-dark-zone,.qt-dark-zone *){color:#007c78!important}
+html[data-qara-theme="solarized-light"] :where(main,article,footer,.entry-footer,.afterword,.about,.collection,.journal,.chapter,.story,.closing,.ending,.night,.dawn,.morning,.daylight,.film-section,.invisible,.architecture){background-color:#fdf6e3!important;background-image:none!important;border-color:#93a1a1!important}
+html[data-qara-theme="solarized-light"] :where(.qt-dark-zone,.qt-dark-zone *){--bg:#080c13;--ink:#eee9df;--text:#eee9df;--muted:#b4bdc5;--gold:#d7b88a;--accent:#d7b88a;color:#eee9df!important}
+html[data-qara-theme="solarized-light"] .qt-dark-zone{background-color:#080c13!important}
+html[data-qara-theme="solarized-light"] :where(header.qt-dark-zone,.topbar.qt-dark-zone,.masthead.qt-dark-zone,.film-caption.qt-dark-zone,.sky-tags.qt-dark-zone){background-color:transparent!important}
+html[data-qara-theme="solarized-light"] :where(.experiment,.workflow-note,.step-index,.horizon-panel,.music-card,.contact-card,.qt-contact-card,.sky-info,.field-notes,.control,.viewer-info,dialog,.musicbar,.journal-card,.card,.journey-tools,.film-bar,.film-credit,.cosmic-panel){background:#eee8d5!important;border-color:#93a1a1!important;box-shadow:none!important;color:#586e75!important}
+html[data-qara-theme="solarized-light"] :where(button,select,input[type=search],input[type=text],textarea){background:#eee8d5!important;color:#073642!important;border-color:#93a1a1!important}
+html[data-qara-theme="solarized-light"] :where(button,select) :where(span,svg){color:inherit!important}
+html[data-qara-theme="solarized-light"] :where(button[aria-pressed=true],button[aria-selected=true],nav a[aria-current=page]){background:#073642!important;color:#fdf6e3!important;border-color:#073642!important}
+html[data-qara-theme="solarized-light"] :where(button[aria-pressed=true],button[aria-selected=true]) *{color:inherit!important}
+html[data-qara-theme="solarized-light"] :where(input[type=range],progress){accent-color:#007c78!important}
+html[data-qara-theme="solarized-light"] :where(a,button,input,select,summary):focus-visible{outline:2px solid #007c78!important;outline-offset:4px}
+html[data-qara-theme="solarized-light"] :where(hr,.fact,.details,details,.film,.film-block,.controls,.sky-label-guide){border-color:#93a1a1!important}
+html[data-qara-theme="solarized-light"] #journal .qt-wheel-item{background:transparent!important;box-shadow:none!important;border:0!important}
+html[data-qara-theme="solarized-light"] #journal .qt-wheel-item.is-active{background:none!important;color:#073642!important}
+html[data-qara-theme="solarized-light"] #journal .qt-wheel-actions button{background:transparent!important;color:#007c78!important}
+html[data-qara-theme="solarized-light"] :where(.sky-marker,.marker,.hotspot){background:#073642!important;color:#fdf6e3!important;border-color:#eee8d5!important}
+html[data-qara-theme="solarized-light"] #qara-theme-toggle{background:#eee8d5!important;color:#073642!important;border-color:#93a1a1!important}
+html[data-qara-theme="solarized-light"] #qara-theme-toggle *{color:inherit!important}
+html[data-qara-theme="solarized-light"] ::selection{background:#2aa198;color:#002b36}
+@media(max-width:600px){#qara-theme-toggle{width:44px!important;padding:10px!important;left:12px!important}#qara-theme-toggle span{display:none!important}}
+@media print{#qara-theme-toggle{display:none!important}}
+html[data-qara-theme="solarized-light"] :where(#qara-contact,#cosmic-menu,#cosmic-menu nav a,#portal-memory,#cosmic-menu .portal-secret,#cosmic-menu .portal-map-launch,#cosmic-menu .portal-preview,.sky-info,.sky-guide-card,.sky-full,.steps article,aside,.badge){background:#eee8d5!important;color:#586e75!important;border-color:#93a1a1!important}
+html[data-qara-theme="solarized-light"] :where(.night::before,.night::after){background:none!important}
+html[data-qara-theme="solarized-light"] .descent{background:linear-gradient(#fdf6e3,#eee8d5)!important}
+html[data-qara-theme="solarized-light"] .spot{background:#073642!important;color:#fdf6e3!important}
+html[data-qara-theme="solarized-light"] :where(.spot,.sky-marker,.marker) *{color:inherit!important}
