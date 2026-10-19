@@ -32,3 +32,25 @@ html[data-qara-theme="solarized-light"] :where(.night::before,.night::after){bac
 html[data-qara-theme="solarized-light"] .descent{background:linear-gradient(#fdf6e3,#eee8d5)!important}
 html[data-qara-theme="solarized-light"] .spot{background:#073642!important;color:#fdf6e3!important}
 html[data-qara-theme="solarized-light"] :where(.spot,.sky-marker,.marker) *{color:inherit!important}
+
+/* Dark cinematic areas retain transparent control groups in light mode.
+   .control is also used by the homepage sliders, not only light content panels. */
+html[data-qara-theme="solarized-light"] .qt-dark-zone .control,
+html[data-qara-theme="solarized-light"] .qt-dark-zone .controls,
+html[data-qara-theme="solarized-light"] .qt-dark-zone .soundbar{
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+html[data-qara-theme="solarized-light"] .qt-dark-zone .control label,
+html[data-qara-theme="solarized-light"] .qt-dark-zone .control label span{
+  color:#eee8d5!important;
+}
+html[data-qara-theme="solarized-light"] .qt-dark-zone .control output{
+  color:#fdf6e3!important;
+}
+html[data-qara-theme="solarized-light"] .qt-dark-zone select,
+html[data-qara-theme="solarized-light"] .qt-dark-zone select option{
+  color:#073642!important;
+  background:#eee8d5!important;
+}
