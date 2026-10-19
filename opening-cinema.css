@@ -355,3 +355,33 @@ body > header::after {
   }
 
 }
+/* Solarized: transparent header over the opening video */
+html[data-qara-theme="solarized-light"] body > header,
+html[data-qara-theme="solarized-light"] body > header .brand,
+html[data-qara-theme="solarized-light"] body > header .site-nav,
+html[data-qara-theme="solarized-light"] body > header .site-nav a,
+html[data-qara-theme="solarized-light"] body > header #site-language {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-qara-theme="solarized-light"] body > header,
+html[data-qara-theme="solarized-light"] body > header .brand,
+html[data-qara-theme="solarized-light"] body > header .site-nav a,
+html[data-qara-theme="solarized-light"] body > header #site-language {
+  color: #fff5e8 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+}
+
+html[data-qara-theme="solarized-light"] body > header select {
+  color-scheme: dark;
+  background: transparent !important;
+  color: #fff5e8 !important;
+  border-color: #c99769 !important;
+}
+
+html[data-qara-theme="solarized-light"] body > header select option {
+  background: #101114 !important;
+  color: #fff5e8 !important;
+  text-shadow: none;
+}
