@@ -1,0 +1,38 @@
+/* Featured story / native horizontal browsing / complete expandable archive. */
+#journal.ja-ready{--ja-text:#f0e7dc;--ja-muted:#c4b7a6;--ja-accent:#dab58f;--ja-line:#b99a784d;--ja-panel:#101115e8;max-width:1280px;padding-top:48px;padding-bottom:48px}
+#journal .ja-feature{display:grid;grid-template-columns:1.2fr 1fr;align-items:stretch;overflow:hidden;border:1px solid var(--ja-line);border-radius:12px;background:var(--ja-panel)!important;margin:24px 0 30px;text-decoration:none}
+#journal .ja-feature img{display:block;width:100%;height:100%;min-height:260px;max-height:360px;object-fit:cover;object-position:center}
+#journal .ja-feature-copy{position:relative;padding:clamp(24px,4vw,46px);display:flex;flex-direction:column;justify-content:center}
+#journal .ja-kicker,#journal .ja-number{color:var(--ja-accent)!important;font:11px/1.5 monospace;letter-spacing:.14em;text-transform:uppercase}
+#journal .ja-feature h3{color:var(--ja-text)!important;font-size:clamp(28px,3.6vw,44px);line-height:1.12;letter-spacing:-.035em;font-weight:400;margin:20px 0 16px}
+#journal .ja-feature p{color:var(--ja-muted)!important;font-size:15px;line-height:1.7;margin:0 0 26px}
+#journal .ja-feature-copy>svg{color:var(--ja-accent)!important;align-self:flex-end;flex-shrink:0}
+#journal .ja-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:14px}
+#journal .ja-heading h3{color:var(--ja-text)!important;font-size:18px;font-weight:400;margin:0}
+#journal .ja-buttons{display:flex;gap:8px}
+#journal .ja-buttons button{display:grid;place-items:center;width:44px;height:44px;min-height:44px;padding:0;background:var(--ja-panel)!important;border:1px solid var(--ja-line);border-radius:50%;color:var(--ja-accent)!important}
+#journal .ja-buttons svg{color:inherit!important}
+#journal #ja-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:2px;padding:4px 2px 16px;scrollbar-width:thin;scrollbar-color:var(--ja-accent) transparent;overscroll-behavior-x:contain}
+#journal .ja-card{position:relative;display:flex;flex-direction:column;flex:0 0 calc((100% - 32px)/3);min-width:0;scroll-snap-align:start;padding:22px;background:var(--ja-panel)!important;border:1px solid var(--ja-line);border-radius:8px;text-decoration:none}
+#journal .ja-card h4{font-size:20px;line-height:1.3;font-weight:400;letter-spacing:-.02em;margin:14px 0 10px;color:var(--ja-text)!important}
+#journal .ja-card p{font-size:13px;line-height:1.6;margin:0 0 16px;color:var(--ja-muted)!important}
+#journal .ja-card>svg{margin-top:auto;align-self:flex-end;color:var(--ja-accent)!important;flex-shrink:0}
+#journal .ja-all{margin-top:20px;border:0!important;border-top:1px solid var(--ja-line)!important;background:transparent!important}
+#journal .ja-all summary{padding:20px 0;cursor:pointer;font-size:14px;color:var(--ja-accent)!important;min-height:44px}
+#journal .ja-all .journal-cards{display:block}
+#journal .ja-all .journal-card{display:block;min-height:0;padding:15px 0;margin:0;border:0;border-top:1px solid var(--ja-line);border-radius:0;background:transparent!important;box-shadow:none!important}
+#journal .ja-all .journal-card h3{font-size:17px;line-height:1.4;margin:0;color:var(--ja-text)!important}
+#journal .ja-all .journal-card p{font-size:12px;line-height:1.6;margin:5px 0 0;color:var(--ja-muted)!important}
+#journal .ja-all .journal-arrow{display:none}
+#journal :is(.ja-feature,.ja-card):hover{border-color:var(--ja-accent)}
+#journal :is(.ja-feature,.ja-card,.ja-buttons button,.ja-all summary,#ja-track):focus-visible{outline:2px solid var(--ja-accent)!important;outline-offset:3px}
+html[data-qara-theme="solarized-light"] #journal.ja-ready{--ja-text:#073642;--ja-muted:#586e75;--ja-accent:#007c78;--ja-line:#93a1a180;--ja-panel:#eee8d5}
+@media(max-width:700px){
+ #journal.ja-ready{padding-top:30px;padding-bottom:30px}
+ #journal .ja-feature{grid-template-columns:1fr;margin-top:20px;margin-bottom:24px}
+ #journal .ja-feature img{height:200px;min-height:0;max-height:none}
+ #journal .ja-feature-copy{padding:22px}
+ #journal .ja-feature h3{font-size:30px;margin:12px 0}
+ #journal .ja-feature p{margin-bottom:16px;font-size:14px}
+ #journal .ja-card{flex-basis:84%;padding:20px}
+}
