@@ -72,3 +72,37 @@ html body #opening-cinema .opening-status {margin:10px 5vw 0;font-size:12px;line
   html body #opening-header {padding:14px 6vw 8px}
   html body #opening-header .brand {font-size:12px}
 }
+/* Smaller, understated opening credits */
+html body #opening-cinema .opening-credit {
+  max-width: 560px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #aaa39a !important;
+}
+
+html body #opening-cinema .opening-credit strong {
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .035em;
+  color: #cec3b5 !important;
+}
+
+html body #opening-cinema .opening-credit a {
+  color: inherit !important;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #aaa39a66;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+  #opening-cinema .opening-bottom {
+    padding-top: 12px;
+    gap: 12px;
+  }
+
+  html body #opening-cinema .opening-credit {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
