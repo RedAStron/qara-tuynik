@@ -46,5 +46,12 @@ window.addEventListener('pageshow',()=>start());
 document.getElementById('immersive-open')?.addEventListener('click',()=>{userPaused=true;pauseAutomatically();});
 document.addEventListener('qara-language-change',labels);
 document.addEventListener('change',e=>{if(['site-language','language'].includes(e.target.id))setTimeout(labels,0);});
+// Select once on page load: rotation/resizing must not restart the soundtrack.
+const portrait=matchMedia('(max-width: 700px)').matches;
+film.dataset.openingLayout=portrait?'portrait':'landscape';
+film.width=portrait?720:910;
+film.height=portrait?810:512;
+film.poster=portrait?'opening-reflection-preview.jpg':'opening-preview.jpg';
+film.src=portrait?film.dataset.mobileSrc:film.dataset.desktopSrc;
 labels();start();
 })();

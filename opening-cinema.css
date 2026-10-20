@@ -106,3 +106,8 @@ html body #opening-cinema .opening-credit a {
     line-height: 1.5;
   }
 }
+/* Keep the whole reflected composition. No cropping or forced viewport height. */
+html body #opening-film[data-opening-layout="portrait"] {
+  aspect-ratio:8/9;
+  object-fit:contain;
+}
