@@ -34,8 +34,15 @@ function init(){
  function move(direction){track.scrollBy({left:direction*(track.firstElementChild.getBoundingClientRect().width+16),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
  browse.querySelector('.ja-prev').addEventListener('click',()=>move(-1));browse.querySelector('.ja-next').addEventListener('click',()=>move(1));
  track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1);}});
- new MutationObserver(update).observe(source,{subtree:true,characterData:true,childList:true});
- new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ // The global translator writes html.lang after every body mutation.
+ // Observing that attribute here would create an endless render/translate loop.
+ // Refresh after the language selector's synchronous translation handlers finish.
+ let refreshTimer;
+ function scheduleUpdate(){clearTimeout(refreshTimer);refreshTimer=setTimeout(update,0);}
+ document.addEventListener('change',event=>{
+  if(['site-language','language'].includes(event.target.id))scheduleUpdate();
+ });
+ document.addEventListener('qara-language-change',scheduleUpdate);
  update();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
