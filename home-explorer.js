@@ -8,10 +8,14 @@ if(window.QARA_DUTCH)Object.assign(window.QARA_DUTCH,{'Open in SIMBAD ↗':'Open
 const english={};root.querySelectorAll('[data-s]').forEach(el=>english[el.dataset.s]=el.textContent);
 let language='en',index=0,selected=-1,scale=1,tx=0,ty=0,labels=true,stars=false,negative=false,loaded=false,expanded=false,previousOverflow='',generation=0;
 const view=$('viewport'),scene=$('scene'),photo=$('photo'),pointers=new Map();let gesture=null;
-const tr=(en,lat)=>language==='nl'?(window.QARA_DUTCH?.[en]||en):language==='en'?en:language==='kaa-Cyrl'?cyrl(lat):lat;
+const tr=(en,lat)=>window.QARA_LOCALES?.[language]?window.qaraTranslate(en,language):language==='nl'?(window.QARA_DUTCH?.[en]||en):language==='en'?en:language==='kaa-Cyrl'?cyrl(lat):lat;
 const photoNames={"andromeda":["Andromeda galaktikası","Андромеда галактикасы"],"heart-soul":["Júrek hám Jan tumanlıqları","Жүрек ҳәм Жан туманлықлары"],"elephant-trunk":["Pil tumsıǵı tumanlıǵı","Пил тумсығы туманлығы"],"north-america":["Arqa Amerika tumanlıǵı","Арқа Америка туманлығы"],"orion":["Orion tumanlıǵı","Орион туманлығы"],"cygnus-loop":["Aqquw ilmegi","Аққуў илмеги"]};
-function photoName(d){const pair=photoNames[d.slug];if(pair&&language==='kaa-Latn')return pair[0];if(pair&&language==='kaa-Cyrl')return pair[1];return language==='nl'?(window.QARA_DUTCH?.[d.name]||d.name):d.name;}
-function languageUpdate(){language=document.getElementById('site-language')?.value||'en';root.querySelectorAll('[data-s]').forEach(el=>el.textContent=tr(english[el.dataset.s],latin[el.dataset.s]));information();$('name').textContent=photoName(data[index]);root.querySelectorAll('.sky-thumbs span').forEach((el,i)=>el.textContent=photoName(data[i]));photo.alt=photoName(data[index]);}
+function photoName(d){if(window.QARA_LOCALES?.[language])return window.qaraTranslate(d.name,language);const pair=photoNames[d.slug];if(pair&&language==='kaa-Latn')return pair[0];if(pair&&language==='kaa-Cyrl')return pair[1];return language==='nl'?(window.QARA_DUTCH?.[d.name]||d.name):d.name;}
+const accessibleOriginals=new Map();root.querySelectorAll('[aria-label],img[alt]').forEach(el=>{for(const attr of ['aria-label','alt'])if(el.hasAttribute(attr)){const value=el.getAttribute(attr);if(value)accessibleOriginals.set(el,{...(accessibleOriginals.get(el)||{}),[attr]:value});}});
+function languageUpdate(){language=document.getElementById('site-language')?.value||'en';
+for(const [el,attrs] of accessibleOriginals)for(const [attr,value] of Object.entries(attrs))el.setAttribute(attr,language==='nl'?(window.QARA_DUTCH?.[value]||value):window.qaraTranslate?.(value,language)||value);
+root.querySelectorAll('.sky-marker').forEach((el,i)=>el.setAttribute('aria-label',markerText(data[index].markers[i],0)));
+root.querySelectorAll('[data-s]').forEach(el=>el.textContent=tr(english[el.dataset.s],latin[el.dataset.s]));information();$('name').textContent=photoName(data[index]);root.querySelectorAll('.sky-thumbs span').forEach((el,i)=>el.textContent=photoName(data[i]));photo.alt=photoName(data[index]);}
 function markerText(m,i){return language==='nl'&&m.nl?m.nl[i]:tr(i===0?m.name:m.note,m.lat?.[i]||(i===0?m.name:m.note));}
 function renderGuide(){
  const d=data[index];$('label-heading').textContent=language==='nl'?'Over de markeringen':tr('About the labels','Belgiler haqqında');

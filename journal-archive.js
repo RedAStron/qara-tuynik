@@ -6,6 +6,7 @@ function init(){
  const links=[...source.querySelectorAll('a.journal-card[href]')];if(!links.length)return;
  const feature=links.find(a=>a.getAttribute('href')==='journal12.html')||links.at(-1);
  const labels={en:['Featured story','Browse the journal','Previous entries','Next entries','All {n} entries'],nl:['Uitgelicht verhaal','Blader door het dagboek','Vorige bijdragen','Volgende bijdragen','Alle {n} bijdragen'],'kaa-Latn':['Tańlanǵan jazba','Kúndelikti kóriw','Aldınǵı jazbalar','Keyingi jazbalar','Barlıq {n} jazba'],'kaa-Cyrl':['Таңланған жазба','Күнделикти көриў','Алдыңғы жазбалар','Кейинги жазбалар','Барлық {n} жазба']};
+if(window.qaraTranslateCopy)for(const lang of ['ru','uz'])labels[lang]=window.qaraTranslateCopy(labels.en,lang);
  const arrow='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>';
  const hero=document.createElement('a');hero.className='ja-feature';hero.href=feature.getAttribute('href');
  hero.innerHTML='<img src="journal12-assets/milky-way-eye.png" alt="" loading="lazy" decoding="async"><div class="ja-feature-copy"><span class="ja-kicker"></span><h3></h3><p></p>'+arrow+'</div>';

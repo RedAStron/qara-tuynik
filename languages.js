@@ -137,25 +137,27 @@
   const normalize = s => s.replace(/\s+/g,' ').trim();
   const entries = new Map();
   function add(en, lat) {
-    const row={en, nl:window.QARA_DUTCH?.[en]||en, 'kaa-Latn':lat, 'kaa-Cyrl':lat===en?en:cyrillic(lat)};
+    const row={en, ru:window.QARA_LOCALES?.ru?.[en]||en, uz:window.QARA_LOCALES?.uz?.[en]||en, nl:window.QARA_DUTCH?.[en]||en, 'kaa-Latn':lat, 'kaa-Cyrl':lat===en?en:cyrillic(lat)};
     for (const value of Object.values(row)) if (!entries.has(normalize(value))) entries.set(normalize(value), row);
   }
   Object.entries(latin).forEach(([en,lat])=>add(en,lat));
   Object.keys(window.QARA_DUTCH||{}).filter(en=>!latin[en]).forEach(en=>add(en,en));
+  Object.keys(window.QARA_LOCALES?.ru||{}).filter(en=>!latin[en]).forEach(en=>add(en,en));
   // Gallery accessible names combine titles and descriptions.
   document.querySelectorAll('.photo-card').forEach(card=>{
     const title=card.querySelector('h3').textContent;
     const description=card.querySelector('p').textContent;
     if(window.QARA_DUTCH){window.QARA_DUTCH['Enlarge '+title]='Vergroot '+(window.QARA_DUTCH[title]||title);window.QARA_DUTCH[title+': '+description]=(window.QARA_DUTCH[title]||title)+': '+(window.QARA_DUTCH[description]||description);}
+    for(const lang of ['ru','uz'])if(window.QARA_LOCALES?.[lang])window.QARA_LOCALES[lang][title+': '+description]=window.qaraTranslate(title,lang)+': '+window.qaraTranslate(description,lang);
     add('Enlarge '+title, latin[title]+' — úlkeytip kóriw');
     add(title+': '+description, latin[title]+': '+latin[description]);
   });
   let language='en';
-  try { const saved=localStorage.getItem('qara-language'); if(['en','nl','kaa-Latn','kaa-Cyrl'].includes(saved)) language=saved; } catch {}
+  try { const saved=localStorage.getItem('qara-language'); if(['en','nl','kaa-Latn','kaa-Cyrl',...Object.keys(window.QARA_LOCALES||{})].includes(saved)) language=saved; } catch {}
   const selector=document.createElement('select');
   selector.id='site-language';
   selector.setAttribute('aria-label','Language / Til / Тил');
-  [['en','English'],['nl','Nederlands'],['kaa-Latn','Qaraqalpaqsha · Latin'],['kaa-Cyrl','Қарақалпақша · Кирилл']].forEach(([value,label])=>{
+  [['en','English'],['nl','Nederlands'],...(window.QARA_LOCALES?[['ru','Русский'],['uz','O‘zbekcha']]:[]),['kaa-Latn','Qaraqalpaqsha · Latin'],['kaa-Cyrl','Қарақалпақша · Кирилл']].forEach(([value,label])=>{
     const option=document.createElement('option'); option.value=value; option.textContent=label; option.lang=value; selector.append(option);
   });
   selector.value=language;
@@ -171,7 +173,7 @@
   }
   function apply() {
     observer.disconnect();
-    document.documentElement.lang=language;
+    if(document.documentElement.lang!==language)document.documentElement.lang=language;
     const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
     let node;
     while((node=walker.nextNode())) {

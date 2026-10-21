@@ -19,6 +19,7 @@
     'kaa-Cyrl':{secret:'Кишкене жулдызды ашыў',memory:'Бәри Нөкисте аспанға қараған бир баладан басланды.',read:'Тарийхымды оқыў',constellation:'Жулдызлар топарымды изертлеў',back:'Менюға қайтыў',mapTitle:'Түнге ашылған алты терезе',mapHint:'Сүўретти көриў ушын жарқыраған ноқатқа басың.',art:'Көркем жулдызлар топары — аспан картасы емес.',explore:'Бул сүўретти изертлеў'}
   };
   Object.keys(extra).forEach(lang=>Object.assign(texts[lang],extra[lang]));
+  if(window.qaraTranslateCopy)for(const lang of ['ru','uz'])texts[lang]=window.qaraTranslateCopy(texts.en,lang);
   const body = modal.querySelector('.portal-body');
   const menuView=document.createElement('div');menuView.className='portal-menu-view';
   const closeButton=modal.querySelector('.portal-close');
@@ -47,7 +48,7 @@
   ];
   let selected=0;
   const preview=mapView.querySelector('.portal-preview'),points=[];
-  const photoName=p=>p[document.documentElement.lang==='kaa-Latn'?3:document.documentElement.lang==='kaa-Cyrl'?4:2];
+  const photoName=p=>window.QARA_LOCALES?.[document.documentElement.lang]?window.qaraTranslate(p[2]):p[document.documentElement.lang==='kaa-Latn'?3:document.documentElement.lang==='kaa-Cyrl'?4:2];
   function selectPhoto(index){
     selected=index;const p=photos[index];
     const img=preview.querySelector('img'),src='assets/gallery/'+p[1]+'.jpg';

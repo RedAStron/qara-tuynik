@@ -5,6 +5,7 @@
   'kaa-Latn':['Interaktiv · Altı súwret','Juldızlar maydanı','Bir jaqtılıq noqatınıń izinen júriń.','Juldızlar maydanına kiriw'],
   'kaa-Cyrl':['Интерактив · Алты сүўрет','Жулдызлар майданы','Бир жақтылық ноқатының изинен жүриң.','Жулдызлар майданына кириў']
  };
+if(window.qaraTranslateCopy)for(const lang of ['ru','uz'])copy[lang]=window.qaraTranslateCopy(copy.en,lang);
  const selector=document.getElementById('site-language')||document.getElementById('language');
  function apply(){const words=copy[selector?.value||document.documentElement.lang]||copy.en;document.querySelectorAll('[data-sf-launch]').forEach(el=>{const value=words[Number(el.dataset.sfLaunch)];if(value!==undefined&&el.textContent!==value)el.textContent=value;});}
  if(selector)selector.addEventListener('change',apply);

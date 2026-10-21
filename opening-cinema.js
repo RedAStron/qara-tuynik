@@ -12,6 +12,7 @@ en:['Sound on','Mute','Tap Play to start the film.','Video unavailable. Watch th
 nl:['Geluid aan','Dempen','Tik op Afspelen om de film te starten.','Video niet beschikbaar. Bekijk het origineel op YouTube.','Verken het zwarte gat','Afspelen','Pauzeren'],
 'kaa-Latn':['Dawıstı qosıw','Dawıstı óshiriw','Filmdi baslaw ushın Play túymesin basıń.','Video ashılmadı. YouTube-ta originalın kóriń.','Qara túynikti izertleń','Oynatıw','Toqtatıw'],
 'kaa-Cyrl':['Даўысты қосыў','Даўысты өшириў','Фильмди баслаў ушын Play түймесин басың.','Видео ашылмады. YouTube-та оригиналын көриң.','Қара түйникти изертлең','Ойнатыў','Тоқтатыў']};
+if(window.qaraTranslateCopy)for(const lang of ['ru','uz'])words[lang]=window.qaraTranslateCopy(words.en,lang);
 function labels(){
  const t=words[document.documentElement.lang]||words.en;
  sound.textContent=t[film.muted?0:1];sound.setAttribute('aria-pressed',String(!film.muted));
