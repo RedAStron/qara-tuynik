@@ -1,6 +1,9 @@
 /* QARA TUYNIK appearance. No media processing, network calls or observers. */
 (()=>{'use strict';
 const root=document.documentElement,key='qara-theme';
+// Refresh the shared stylesheet without editing every journal HTML file.
+const themeCSS=document.querySelector('link[rel="stylesheet"][href*="qara-theme.css"]');
+if(themeCSS){const url=new URL(themeCSS.href);url.searchParams.set('v','20261021-editorial1');if(themeCSS.href!==url.href)themeCSS.href=url.href;}
 let theme='dark';try{if(localStorage.getItem(key)==='solarized-light')theme='solarized-light';}catch{}
 root.dataset.qaraTheme=theme;
 function init(){
@@ -18,6 +21,7 @@ function init(){
  'journal08.html':'.awakening,.cosmic-stage,.topbar,.finale',
  'journal09.html':'.hero',
  'journal11.html':'.hero',
+ 'journal12.html':'.hero',
  'journal13.html':'.opening,.masthead',
  'journal14.html':'.hero',
  'journal15.html':'.hero',
