@@ -1,0 +1,15 @@
+/* The film is presented in its original 910:512 frame, never cropped. */
+#between-two-skies{margin:0 0 clamp(64px,10vw,128px);padding:0 0 clamp(40px,6vw,72px);border-bottom:1px solid #c6a78445;scroll-margin-top:24px}
+#between-two-skies .bts-kicker{font:11px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.16em;color:#d7b88a;margin:0 0 20px}
+#between-two-skies .bts-frame{margin:0;background:#030406;overflow:hidden;border:1px solid #c6a78445;border-radius:8px}
+#between-two-skies #bts-video{display:block;width:100%;height:auto;max-height:none;aspect-ratio:910/512;object-fit:contain;background:#030406}
+#between-two-skies .bts-introduction{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);padding-top:clamp(28px,5vw,56px)}
+#between-two-skies h2{font-size:clamp(34px,4.6vw,64px);font-weight:400;line-height:1.08;letter-spacing:-.045em;margin:0 0 20px;text-wrap:balance}
+#between-two-skies .bts-byline{font-size:14px;line-height:1.6;color:#b6aaa0}
+#between-two-skies .bts-story>p{font-size:clamp(16px,1.3vw,18px);line-height:1.85;color:#ccc4bb;margin:0 0 22px;text-wrap:pretty}
+#between-two-skies .bts-story .bts-credit{font-size:12px;line-height:1.7;color:#b6aaa0;margin:30px 0 10px}
+#between-two-skies .bts-file{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;color:#d7b88a;text-underline-offset:5px}
+#between-two-skies .bts-file:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+#between-two-skies .bts-story .bts-status{font-size:14px}
+html[data-qara-theme="solarized-light"] #between-two-skies{border-color:#d6d2bf}
+@media(max-width:700px){#between-two-skies .bts-introduction{grid-template-columns:1fr;gap:24px}#between-two-skies .bts-heading .bts-kicker{margin-bottom:14px}}
