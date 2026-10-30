@@ -1,0 +1,14 @@
+/* QARA TUYNIK — progressive motion enhancements */
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: no-preference) {
+  .qt-reveal { opacity: 0; transform: translate3d(0, 32px, 0); filter: blur(5px); transition: opacity 850ms cubic-bezier(.2,.75,.25,1), transform 850ms cubic-bezier(.2,.75,.25,1), filter 850ms ease; transition-delay: var(--qt-delay, 0ms); }
+  .qt-reveal.qt-visible { opacity: 1; transform: translate3d(0,0,0); filter: blur(0); }
+  .journal-card, .photo-card, .fact { transition: border-color .3s ease, box-shadow .35s ease, background-color .35s ease; }
+  .journal-card:hover, .photo-card:hover, .fact:hover { box-shadow: 0 16px 55px rgba(55,125,205,.13); }
+  .photo-card img { transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+  .photo-card:hover img { transform: scale(1.045); }
+  .qt-interactive { --qt-pointer-x: 50%; --qt-pointer-y: 50%; }
+  .qt-interactive::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:0; background:radial-gradient(330px circle at var(--qt-pointer-x) var(--qt-pointer-y), rgba(137,185,245,.10), transparent 72%); transition:opacity .35s ease; border-radius:inherit; }
+  .qt-interactive:hover::after { opacity:1; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .qt-reveal { opacity:1!important; transform:none!important; filter:none!important; } }
